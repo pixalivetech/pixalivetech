@@ -41,7 +41,7 @@ const Footer = () => {
           
           {/* Coworking Space Card */}
                    {/* Coworking Space Card */}
-                   <div className="relative top-[50px] bg-white shadow-lg p-6 flex gap-4 items-center rounded-lg">
+                   <div  data-aos="fade-right" className="relative top-[50px] bg-white shadow-lg p-6 flex gap-4 items-center rounded-lg">
             {/* Background Shadow Effect */}
             <div className="absolute left-4 top-[-12px] right-4 bottom-[-12px] bg-gray-300 opacity-40 rotate-3 rounded-lg -z-10"></div>
 
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
 
           {/* Career Opportunities Card */}
-          <div className="relative top-[50px] bg-white shadow-lg p-6 flex gap-4 items-center rounded-lg">
+          <div  data-aos="fade-left" className="relative top-[50px] bg-white shadow-lg p-6 flex gap-4 items-center rounded-lg">
             {/* Background Shadow Effect */}
             <div className="absolute left-4 top-[-12px] right-4 bottom-[-12px] bg-gray-300 opacity-40 rotate-3 rounded-lg -z-10"></div>
 

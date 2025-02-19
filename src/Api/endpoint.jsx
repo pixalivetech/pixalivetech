@@ -7,3 +7,4 @@ export const Services="services";
 export const JobOpenings="jobOpening";
 export const Developers="hireDevelopers"
 export const Apply="apply";
+export const workingSpace="workingSpace";

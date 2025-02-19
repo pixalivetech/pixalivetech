@@ -1,58 +1,29 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { FaGreaterThan } from "react-icons/fa";
 import slide1 from "../../Assests/Images/pagetitle_bg.jpg";
 import Header from "../../Components/header";
 import MainHeader from "../../Components/mainheader";
 import Footer from "../../Components/footer";
+import { WorkingSpace } from "../../Api/workingspace";
 
-const workspaceData = {
-    title: "Coworking Space",
-    introduction: ["We are a community of bold minds who have decided to work under the same roof. Our workspace and the people around us inspire us to take action, to grow, to do better. We offer co-working spaces to bring business industries together. To inspire, educate, and share ideas. Supported by a growing member network and a diverse program of professional and social lifestyle events, we are much more than a workspace; we are a community that’s driven towards developing a better and healthier society. By saying that Littuss Co-working space provides a comfortable, friendly office & storage solution that you will get 100% satisfaction from working here and making the best out of this experience."],
-    
-    facilities: [
-        "Wifi Ultra Fast Internet",
-        "Meeting Room",
-        "Snack & Coffee",
-        "Printer & Scanner",
-        "Mail Handling",
-        "Coworking + Storage Solutions"
-    ],
 
-    waysOfWorking: [
-        {
-            type: "Dedicated Desk",
-            description: "Your own dedicated desk with a lockable storage, and full-speed Internet connectivity.",
-            features: [
-                "Ergonomic chairs and lockable storage",
-                "6 free conference room hours per month",
-                "High-speed fiber Internet connectivity",
-                "24/7 office access"
-            ]
-        },
-        {
-            type: "2 Person Private Office",
-            description: "Private office furnished with sit-to-stand desks, lockable storage, and High-Speed Internet connectivity. Full access to the social lounge and unlimited tea and coffee.",
-            features: [
-                "Ergonomic chairs, sit-to-stand desks, and lockable storage",
-                "12 free conference room hours per month",
-                "High-speed fiber Internet connectivity",
-                "24/7 office access"
-            ]
-        },
-        {
-            type: "5 Person Private Office",
-            description: "Private office furnished with sit-to-stand desks, lockable storage, and High-Speed Internet connectivity. Full access to the social lounge and unlimited tea and coffee.",
-            features: [
-                "Ergonomic chairs, sit-to-stand desks, and lockable storage",
-                "12 free conference room hours per month",
-                "High-speed fiber Internet connectivity",
-                "24/7 office access"
-            ]
-        }
-    ]
-};
 
 const Workingspace = () => {
+    const [workspaceData, setworkspaceData] = useState([]);
+    useEffect(() => {
+      fetchLaptops();
+    }, []);
+  
+    const fetchLaptops = async () => {
+     
+      try {
+        const res = await WorkingSpace();
+        setworkspaceData(res?.data?.result || []);
+        console.log("res",res?.data?.result);
+      } catch (error) {
+        console.log("Error fetching clients", error);
+      }
+    };
     return (
         <div>
             <Header />
