@@ -60,7 +60,7 @@ import { getSearchQuery,saveSearchQuery } from "../../Utils/storage";
 //     email: "pixalivetech@gmail.com",
     
 //   },
-// ];
+// ]; 
 
 const Search = () => {
   const navigate = useNavigate();

@@ -164,7 +164,7 @@ const Home = () => {
 
       <div className="flex-1 bg-[#0E1320] text-white p-6  border-r-2 border-dashed border-gray-700">
         <div className="flex items-center justify-center mb-4">
-        <div className="hover:bg-red-600 p-4 rounded-full border-4 hover:border-white ">
+        <div className="hover:bg-yellow-950 p-4 rounded-full border-4 hover:border-white ">
             <FaLightbulb className="w-16 h-16 text-white "/>
           </div>
         </div>
@@ -175,7 +175,7 @@ const Home = () => {
 
       <div className="flex-1 bg-[#0E1320] text-white p-6  border-r-2 border-dashed border-gray-700">
         <div className="flex items-center justify-center mb-4">
-        <div className="hover:bg-red-600 p-4 rounded-full border-4 hover:border-white">
+        <div className="hover:bg-yellow-950 p-4 rounded-full border-4 hover:border-white">
             <VscGraph className="w-16 h-16 text-white"/>
           </div>
         </div>
@@ -186,7 +186,7 @@ const Home = () => {
 
       <div className="flex-1 bg-[#0E1320] text-white p-6  border-r-2 border-dashed border-gray-700">
         <div className="flex items-center justify-center mb-4">
-          <div className="hover:bg-red-600 p-4 rounded-full border-4 hover:border-white">
+          <div className="hover:bg-yellow-950 p-4 rounded-full border-4 hover:border-white">
            <GoGraph className="w-16 h-16 text-white"/>
           </div>
         </div>
@@ -235,7 +235,7 @@ const Home = () => {
         <div className="relative bg-yellow-600 text-white font-semibold lg:py-3 lg:px-8 py-2 px-4  w-52 lg:w-40 lg:w-0  rounded-lg cursor-pointer">
                       Contact Us
                     </div>
-                    <div className="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-indigo-600 rounded-full"></div>
+                    <div className="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
         </div>
         </div>
       </div>
@@ -275,13 +275,13 @@ const Home = () => {
           <div className="bg-black text-white   rounded-lg h-24 ">
           <img src={pagetitle_bg} alt={pagetitle_bg} className="w-full h-full  object-cover bg-black opacity-40 " />
           
-            <h6 className=" relative  lg:bottom-16 bottom-16 pl-2 lg:pl-4 lg:text-xl text-xs font-semibold flex    w-1/2">Get an Easy Quotation for Your Own Business.</h6>
-            <div className="relative lg:bottom-28 bottom-16 right-8 flex justify-center items-center overflow-hidden ">
+            <h6 className=" relative  lg:bottom-16 bottom-16 pl-2 lg:pl-4 lg:text-md text-xs font-medium flex    w-1/2">Get an Easy Quotation for Your Own Business.</h6>
+            <div className="relative lg:bottom-24 bottom-24 right-8 flex justify-center items-center overflow-hidden ">
         
         <div className="relative  justify-center items-center -right-40 bg-yellow-600 text-white font-semibold lg:py-2 lg:px-4 py-2 px-2  w-60 lg:w-32 lg:w-0  rounded-lg cursor-pointer">
                       Send Us
                     </div>
-                    <div className="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-indigo-600 rounded-full"></div>
+                    <div className="absolute -right-5 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#13256B] rounded-full"></div>
         </div>
           </div>
         </div>
