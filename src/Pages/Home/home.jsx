@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
 import Header from "../../Components/header";
 import MainHeader from "../../Components/mainheader";
 import Footer from "../../Components/footer";
@@ -20,6 +20,8 @@ import monitor from "../../Assests/Images/monitoring.png";
 import stockmorket from "../../Assests/Images/stock-market.png";
 import analytics from "../../Assests/Images/analytics.png";
 import pagetitle_bg from "../../Assests/Images/pagetitle_bg.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const carouselItems = [
   {
     content: "/ We Are Here /",
@@ -101,11 +103,20 @@ const Home = () => {
     arrows: false,
     beforeChange: (current, next) => setActiveSlide(next), // Track active slide
   };
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false, // Animation plays every time it enters the viewport
+      mirror: true, // Animation also plays when scrolling back up
+    });
+  }, []);
   return (
     <div>
-      <Header />
-      <MainHeader  /> {/* Apply a high z-index to the MainHeader */}
+     <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>{/* Apply a high z-index to the MainHeader */}
 
       {/* Slider Container with lower z-index */}
       <div className="relative w-full -z-10"> 
@@ -149,7 +160,7 @@ const Home = () => {
         </div>
       </div>
 
-    <div className=" relative bottom-16 flex flex-col md:flex-row justify-center items-center bg-[#0E1320] p-10 gap-5 lg:mx-52 rounded-lg">
+    <div data-aos="flip-up" className=" relative bottom-16 flex flex-col md:flex-row justify-center items-center bg-[#0E1320] p-10 gap-5 lg:mx-52 rounded-lg">
 
       <div className="flex-1 bg-[#0E1320] text-white p-6  border-r-2 border-dashed border-gray-700">
         <div className="flex items-center justify-center mb-4">
@@ -184,11 +195,11 @@ const Home = () => {
       </div>
     </div>
     <div className=" flex flex-col justify-center items-center gap-4 mb-40">
-    <div className="text-yellow-600 text-center">/ Services /</div>
-    <h1 className="text-4xl font-bold text-black text-center">Here is what we provide</h1>
-    <div className="text-gray-500 text-center ">Best Out Sourcing, IT Staffing and Software Development Company in India</div>
+    <div data-aos="fade-up" className="text-yellow-600 text-center">/ Services /</div>
+    <h1 data-aos="fade-up" className="text-4xl font-bold text-black text-center">Here is what we provide</h1>
+    <div data-aos="fade-up" className="text-gray-500 text-center ">Best Out Sourcing, IT Staffing and Software Development Company in India</div>
     <div className="flex felx-col lg:flex-row">
-    <div className="flex flex-col md:flex-row gap-6 p-6 bg-gray-100 justify-center">
+    <div data-aos="fade-up" className="flex flex-col md:flex-row gap-6 p-6 bg-gray-100 justify-center">
       {services.map((service, index) => (
         <div key={index} className="p-6 bg-white rounded-2xl shadow-md max-w-sm ">
         <div className="relative hover:top-10">
@@ -230,7 +241,7 @@ const Home = () => {
       </div>
       
       {/* Content Section */}
-      <div className="grid md:grid-cols-2 gap-6 lg:mx-52   ">
+      <div data-aos="flip-left" className="grid md:grid-cols-2 gap-6 lg:mx-52   ">
         {/* Consulting Section */}
         <div className="bg-gray p-6 rounded-lg border border-gray-200">
           <h3 className="text-yellow-600 font-semibold mb-2">/ Consulting /</h3>
@@ -253,7 +264,7 @@ const Home = () => {
         </div>
 
         {/* Process Section */}
-        <div className="bg-gray  p-6 rounded-lg border border-gray-200 ">
+        <div data-aos="flip-right" className="bg-gray  p-6 rounded-lg border border-gray-200 ">
           <h3 className="text-yellow-600 font-semibold mb-2">/ Our Process /</h3>
           <h2 className="text-3xl font-bold mb-2">We follow the process as committed to clients</h2>
           <p className="text-gray-700 mb-4">
@@ -276,7 +287,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-      <Footer />
+    <div className="relative -z-50"> <Footer  /></div>
     </div>
   );
 };

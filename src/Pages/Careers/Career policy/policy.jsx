@@ -1,10 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Header from "../../../Components/header";
 import MainHeader from "../../../Components/mainheader";
 import Footer from "../../../Components/footer";
 import slide1 from "../../../Assests/Images/pagetitle_bg.jpg";
 import { FaGreaterThan } from "react-icons/fa";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const EmailLink = ({ email, text }) => (
   <a href={`mailto:${email}`} className="text-yellow-500 font-bold">
     {text || email}
@@ -12,10 +13,20 @@ const EmailLink = ({ email, text }) => (
 );
 
 const Policy = () => {
+  useEffect(() => {
+    AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: false,
+        mirror: true,
+    });
+}, []);
   return (
     <div>
-      <Header />
-      <MainHeader />
+     <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
         <div className="relative bg-gray-900 h-[180px] -z-10">
           <img
             src={slide1}
@@ -37,22 +48,22 @@ const Policy = () => {
     
       <div className="max-w-7xl mx-auto px-4 py-16 space-y-8">
         <section className="space-y-4">
-          <p className="text-md text-gray-600">
+          <p data-aos="zoom-in-up" className="text-md text-gray-600">
             The evolution of IT continues to provide new challenges and opportunities – that’s what we thrive on. Our business is enjoying considerable success and we are actively recruiting to support the growth of our international operations.
           </p>
-          <p className="text-md text-gray-600">
+          <p data-aos="zoom-in-up" className="text-md text-gray-600">
             We are looking for individuals in a number of key areas and we would be delighted to receive an application from you.
           </p>
-          <p className="text-md text-gray-600">
+          <p data-aos="zoom-in-up" className="text-md text-gray-600">
             Mail to: <EmailLink email="hr@pixalivetech.com" /> or{" "}
             <EmailLink email="pixalivetech@gmail.com" text="Click here" /> to submit your resume.
           </p>
-          <p className="text-md text-gray-600">
+          <p data-aos="zoom-in-up" className="text-md text-gray-600">
             <EmailLink email="pixalivetech@gmail.com" text="Click here" /> for our latest job openings.
           </p>
         </section>
       </div>
-      <Footer />
+      <div className="relative -z-50"> <Footer  /></div>
     </div>
   );
 };

@@ -9,6 +9,8 @@ import lap3 from "../../Assests/Images/Bussiness_laptop.jpeg";
 import slide1 from "../../Assests/Images/pagetitle_bg.jpg";
 import { FaGreaterThan } from "react-icons/fa";
 import {Link}  from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Rental = () => {
   const [laptops, setLaptops] = useState([]);
   useEffect(() => {
@@ -25,10 +27,22 @@ const Rental = () => {
       console.log("Error fetching clients", error);
     }
   };
+
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false, // Animation plays every time it enters the viewport
+      mirror: true, // Animation also plays when scrolling back up
+    });
+  }, []);
   return (
     <div>
-      <Header />
-      <MainHeader />
+      <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
   
         {/* Page Header with Background */}
         
@@ -55,10 +69,10 @@ const Rental = () => {
 
         {/* Introduction Section */}
         <div className="text-center mt-10">
-          <h1 className="text-3xl lg:text-4xl font-bold text-yellow-600">
+          <h1  data-aos="zoom-in-up" className="text-3xl lg:text-4xl font-bold text-yellow-600">
             Laptop Rental Services
           </h1>
-          <p className="text-gray-700 mt-3">
+          <p data-aos="zoom-in-up" className="text-gray-700 mt-3">
             Rent high-quality laptops for your business, events, or personal needs.
           </p>
         </div>
@@ -69,6 +83,7 @@ const Rental = () => {
             <div
               key={index}
               className="bg-white shadow-sm rounded-xl p-2 m-5 text-center border border-gray-300"
+              data-aos="flip-left"
             >
               <img
                 src={laptop.img}
@@ -88,7 +103,7 @@ const Rental = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="mt-16 text-center">
+        <div data-aos="zoom-in-up" className="mt-16 text-center">
           <h2 className="text-2xl font-bold text-gray-800">Need Bulk Rentals?</h2>
           <p className="text-gray-600 mt-2">
             Contact us for special discounts and bulk orders.
@@ -100,7 +115,7 @@ const Rental = () => {
           </Link>
         </div>
         
-      <Footer />
+        <div className="relative -z-50"> <Footer  /></div>
     </div>
   );
 };

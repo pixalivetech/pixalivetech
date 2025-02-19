@@ -8,7 +8,8 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getSingleService } from "../../Api/services";
 import { useLocation } from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 // const Services = {
 //     title: "Mobile Application Development",
 //     introduction: [
@@ -49,10 +50,20 @@ const Services = () => {
     }
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false, // Animation plays every time it enters the viewport
+      mirror: true, // Animation also plays when scrolling back up
+    });
+  }, []);
     return (
         <div>
-            <Header />
-            <MainHeader />
+           <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
 
             {/* Hero Section */}
             <div className="relative bg-gray-900 h-[180px] -z-10">
@@ -74,19 +85,19 @@ const Services = () => {
             <div className="max-w-7xl mx-auto px-4 py-16">
                 
                 {/* Introduction Section */}
-                <section className="mb-8">
+                <section data-aos="zoom-in-up" className="mb-8">
                     {Services?.introduction.map((paragraph, index) => (
                         <p key={index} className="text-lg text-gray-700 mb-4">{paragraph}</p>
                     ))}
                 </section>
 
                 {/* Expertise Section */}
-                <section className="mb-8">
+                <section data-aos="zoom-in-up" className="mb-8">
                     <h1 className="text-3xl font-bold text-start mb-8">{Services?.expertiseTitle}</h1>
                 </section>
 
                 {/* Expertise Table */}
-                <section>
+                <section data-aos="zoom-in-up">
                     <table className="table-auto w-full border border-gray-300">
                         <tbody>
                             {Services?.expertiseList.map((expertise, index) => (
@@ -100,7 +111,7 @@ const Services = () => {
                 </section>
 
                 {/* Call to Action */}
-                <section className="text-center mt-8">
+                <section data-aos="zoom-in-up" className="text-center mt-8">
                     <p className="text-lg text-gray-700">
                         {Services?.callToAction?.text}
                         <Link to="/" className="text-blue-500 font-medium ml-1 hover:underline">
@@ -110,7 +121,7 @@ const Services = () => {
                 </section>
             </div>
 
-            <Footer />
+            <div className="relative -z-50"> <Footer  /></div>
         </div>
     );
 };

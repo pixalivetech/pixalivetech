@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Header from "../../Components/header";
 import MainHeader from "../../Components/mainheader";
 import Footer from "../../Components/footer";
@@ -6,7 +6,8 @@ import contact from "../../Assests/Images/contact_us.jpg";
 import { isValidEmail, isValidPhone } from "../../Utils/validation";
 import { toast } from "react-toastify";
 import { saveContact } from "../../Api/contactUs";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Contact = () => {
     const initialStateInputs = {
         name: "",
@@ -93,13 +94,23 @@ const Contact = () => {
         }
     };
 
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: false, // Animation plays every time it enters the viewport
+          mirror: true, // Animation also plays when scrolling back up
+        });
+      }, []);
     return (
         <div>
-            <Header />
-            <MainHeader />
-            <div className="min-h-screen bg-gray-100 p-6">
+          <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
+            <div className="min-h-screen bg-gray-100 p-6 -z-10">
                 <div className="max-w-5xl mx-auto">
-                    <div className="bg-white shadow-md rounded-lg p-6 mb-8 flex flex-wrap">
+                    <div data-aos="flip-left" className="bg-white shadow-md rounded-lg p-6 mb-8 flex flex-wrap">
                         <div className="w-full md:w-1/2">
                             <h1 className="text-2xl font-medium mb-4">Contact Us:</h1>
                             <h2 className="text-xl font-semibold mb-4">India – Head Office</h2>
@@ -117,7 +128,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="shadow-lg rounded-lg p-6 mb-8 bg-gradient-to-r from-yellow-950 to-[#13256B]">
+                    <div data-aos="flip-right" className="shadow-lg rounded-lg p-6 mb-8 bg-gradient-to-r from-yellow-950 to-[#13256B]">
                         <h2 className="text-2xl font-semibold mb-4 text-center text-white">Get In Touch</h2>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

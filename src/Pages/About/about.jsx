@@ -1,14 +1,26 @@
-import react from "react";
+import React, { useEffect } from "react";
 import Header from "../../Components/header";
 import MainHeader from "../../Components/mainheader";
 import Footer from "../../Components/footer";
 import slide1 from "../../Assests/Images/pagetitle_bg.jpg";
 import {FaGreaterThan} from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false, // Animation plays every time it enters the viewport
+      mirror: true, // Animation also plays when scrolling back up
+    });
+  }, []);
     return (
         <div>
-            <Header/>
-            <MainHeader/>
+            <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
             <div>
      
       <div className="relative bg-gray-900 h-[180px] -z-10 ">
@@ -29,20 +41,20 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 py-16 space-y-8">
      
         <section>
-          <p className="text-lg text-gray-700">
+          <p data-aos="zoom-in-up" className="text-lg text-gray-700">
             PIXALIVE TECHNOLOGY SERVICES is one of the India’s fastest growing Software
             Development Company. PIXALIVE TECHNOLOGY SERVICES Services is headquartered in
             Bangalore, India and Collaborative business operations in USA &
             Malaysia.
           </p>
-          <p className="text-lg text-gray-700 mt-4">
+          <p data-aos="zoom-in-up" className="text-lg text-gray-700 mt-4">
             PIXALIVE TECHNOLOGY SERVICES works with leading Global firms in the Financial
             Services, Technology, Mobile Communications & Media, Airport
             Solutions, Manufacturing, and Retail domains by engaging the
             customer in a ‘collaborative’ manner, by being consultative and by
             offering domain-specific solutions.
           </p>
-          <p className="text-lg text-gray-700 mt-4">
+          <p data-aos="zoom-in-up" className="text-lg text-gray-700 mt-4">
             PIXALIVE TECHNOLOGY SERVICES delivers highly responsive and innovative
             solutions that bridge our client’s Execution. We enable business
             transformation for our customers through the innovative use of
@@ -55,7 +67,7 @@ const About = () => {
         </section>
 
         {/* Mission Section */}
-        <section>
+        <section data-aos="zoom-in-up">
           <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
             <li>We help our clients meet their business needs.</li>
@@ -71,7 +83,7 @@ const About = () => {
         </section>
 
         {/* Vision Section */}
-        <section>
+        <section data-aos="zoom-in-up">
           <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
           <p className="text-lg text-gray-700">
             Our vision is to help companies improve & achieve success through
@@ -86,7 +98,7 @@ const About = () => {
         </section>
       </div>
     </div>
-            <Footer/>
+    <div className="relative -z-50"> <Footer  /></div>
         </div>
     )
 };

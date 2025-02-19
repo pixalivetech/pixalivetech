@@ -103,8 +103,10 @@ const Search = () => {
    };
   return (
     <div>
-      <Header />
-      <MainHeader />
+      <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
       {/* Header Section */}
       <div className="relative bg-gray-900 h-[180px] -z-10">
           <img
@@ -216,7 +218,7 @@ const Search = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="relative -z-50"> <Footer  /></div>
     </div>
   );
 };

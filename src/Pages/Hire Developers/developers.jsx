@@ -7,7 +7,9 @@ import bgImage from "../../Assests/Images/pagetitle_bg.jpg";
 import { FaGreaterThan } from "react-icons/fa";
 import slide1 from "../../Assests/Images/pagetitle_bg.jpg";
 import {getSingleDeveloper} from "../../Api/hireDevelopers"
-
+import { getClients } from "../../Api/ourClients";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // const content = {
 //   role: "Java Developer",
 //   title: "Develop Enterprise Portals Using Opensource JAVA Language",
@@ -102,10 +104,20 @@ const HireJavaDevelopers = () => {
 
  
 
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: false, // Animation plays every time it enters the viewport
+        mirror: true, // Animation also plays when scrolling back up
+      });
+    }, []);
   return (
     <div>
-          <Header />
-          <MainHeader />
+         <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
 
           {/* Page Banner */}
           <div className="relative bg-white relative bg-gray-900 h-[180px] -z-10">
@@ -133,21 +145,21 @@ const HireJavaDevelopers = () => {
         <div className="p-6 lg:p-20">
 
 <div className="text-start mb-10">
-    <h1 className="text-3xl font-bold text-yellow-600">{developer.title}</h1>
+    <h1 data-aos="zoom-in-up" className="text-3xl font-bold text-yellow-600">{developer.title}</h1>
 </div>
 
 {/* Introduction */}
-<p className="text-gray-700 mb-6">{developer.introduction}</p>
+<p data-aos="zoom-in-up" className="text-gray-700 mb-6">{developer.introduction}</p>
 
 {/* Highlights */}
 {developer?.highlights?.length > 0 && (
 <div className="mb-10">
-    <h2 className="text-xl font-bold text-yellow-600 mb-4">
+    <h2 data-aos="zoom-in-up" className="text-xl font-bold text-yellow-600 mb-4">
         Highlights
     </h2>
-    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+    <ul data-aos="zoom-in-up" className="list-disc pl-5 space-y-2 text-gray-700">
         {developer.highlights.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} data-aos="zoom-in-up">{item}</li>
         ))}
     </ul>
 </div>
@@ -155,47 +167,47 @@ const HireJavaDevelopers = () => {
 {/* Services */}
 {developer?.services && (
 <div className="mb-10">
-    <h2 className="text-xl font-bold text-yellow-600 mb-4">
+    <h2  className="text-xl font-bold text-yellow-600 mb-4">
         {developer.services.title}
     </h2>
-    <p className="text-gray-700 mb-4">{developer.services.description}</p>
-    <ul className="list-disc pl-5 space-y-2 text-gray-700">
+    <p data-aos="zoom-in-up" className="text-gray-700 mb-4">{developer.services.description}</p>
+    <ul data-aos="zoom-in-up" className="list-disc pl-5 space-y-2 text-gray-700">
         {developer.services.items.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} data-aos="zoom-in-up">{item}</li>
         ))}
     </ul>
 </div>
   )}
 {/* Why Us */}
 {developer?.whyUs && (
-<div className="mb-10">
-    <h2 className="text-xl font-bold text-yellow-600 mb-4">
+<div  className="mb-10">
+    <h2 data-aos="zoom-in-up" className="text-xl font-bold text-yellow-600 mb-4">
         {developer.whyUs.title}
     </h2>
-    <p className="text-gray-700">{developer.whyUs.description}</p>
+    <p data-aos="zoom-in-up" className="text-gray-700">{developer.whyUs.description}</p>
 </div>
  )}
 {/* Hiring Models */}
 {developer?.hiringModels && (
           <div className="mb-10">
-            <h2 className="text-xl font-bold text-yellow-600 mb-4">{developer.hiringModels.title || "Hiring Models"}</h2>
+            <h2  className="text-xl font-bold text-yellow-600 mb-4">{developer.hiringModels.title || "Hiring Models"}</h2>
             {developer.hiringModels.options?.length > 0 ? (
               developer.hiringModels.options.map((model, index) => (
                 <div key={index} className="mb-6">
-                  <h3 className="text-lg font-bold text-gray-800">{model.name}</h3>
-                  <p className="text-gray-700">{model.description}</p>
+                  <h3 data-aos="zoom-in-up" className="text-lg font-bold text-gray-800">{model.name}</h3>
+                  <p data-aos="zoom-in-up" className="text-gray-700">{model.description}</p>
                 </div>
               ))
             ) : (
-              <p className="text-gray-600">No hiring models available.</p>
+              <p data-aos="zoom-in-up" className="text-gray-600">No hiring models available.</p>
             )}
-            <p className="text-gray-700">{developer.hiringModels.conclusion || ""}</p>
+            <p data-aos="zoom-in-up" className="text-gray-700">{developer.hiringModels.conclusion || ""}</p>
           </div>
         )}
 
 </div>
 
-<Footer />
+<div className="relative -z-50"> <Footer  /></div>
     </div>
   );
 };

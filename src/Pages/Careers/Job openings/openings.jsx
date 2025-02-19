@@ -13,7 +13,8 @@ import { toast } from "react-toastify";
 import { saveApply } from "../../../Api/apply";
 import { uploadFile } from "../../../Utils/fileUpload"; 
 import { FiFolder } from "react-icons/fi";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Openings = () => {
 
@@ -153,10 +154,21 @@ const Openings = () => {
   const closeSearch = () => {
     setModalState({ showModal: false, title: "" }); 
   };
+  useEffect(() => {
+    AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: false,
+        mirror: true,
+    });
+}, []);
+
   return (
     <div>
-      <Header />
-      <MainHeader />
+     <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
       {/* Header Section */}
       <div className="relative bg-gray-900 h-[180px] -z-10">
           <img
@@ -180,7 +192,7 @@ const Openings = () => {
       {/* Main Content */}
       <div className=" flex lg:flex lg:flex-row flex-col max-w-6xl mx-auto  py-16  gap-12 -z-10">
         {/* Job Listings */}
-        <div className="lg:w-[70%]">
+        <div data-aos="flip-left" className="lg:w-[70%]">
         {filteredJobs?.length > 0 ? (
           filteredJobs?.map((job, index) => (
             <div key={index} className="border rounded-lg p-6 shadow-lg mb-8">
@@ -248,7 +260,7 @@ const Openings = () => {
         </div>
 
         {/* Sidebar */}
-        <div className="relative lg:w-[30%] flex flex-col gap-5  ">
+        <div data-aos="flip-right" className="relative lg:w-[30%] flex flex-col gap-5  ">
           <div className="shadow-lg  p-8 rounded-lg text-gray-600 border border-gray-300">
             PIXALIVE TECHNOLOGY SERVICES PVT LTD. is an Information and Technology-based
             company working towards excellence in the Computers, and believe in
@@ -347,7 +359,7 @@ const Openings = () => {
     </div>
   </div>
 )}
-     <div className="z-20"> <Footer  /></div>
+<div className="relative -z-50"> <Footer  /></div>
     </div>
   );
 };

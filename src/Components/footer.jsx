@@ -5,7 +5,8 @@ import { RxFileText } from "react-icons/rx";
 import { getServices } from "../Api/services";
 import { getDevelopers } from "../Api/hireDevelopers";
 import {Link} from "react-router-dom";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Footer = () => {
           const [services, setServices] = useState([]);
           useEffect(() => {
@@ -33,6 +34,15 @@ const Footer = () => {
                 console.log("Error fetching Developers", error);
               }
             };
+
+            useEffect(() => {
+              AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                easing: "ease-in-out", // Smooth easing effect
+                once: false, // Animation runs only once
+                mirror: true,
+              });
+            }, []);
   return (
     <>
       {/* Card Section */}
@@ -72,11 +82,11 @@ const Footer = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="w-full bg-[#13256B] text-white py-10 pt-20 relative z-0">
+      <div data-aos="fade-down" className="w-full bg-[#13256B] text-white py-10 pt-20 relative z-0">
         
         <div className="container mx-auto px-4 lg:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Us */}
-          <div>
+          <div  data-aos="fade-up">
             <h2 className="text-lg font-bold text-yellow-500 mb-4">About Us</h2>
             <p className="text-sm leading-relaxed text-white">
               PIXALIVE TECHNOLOGY SERVICES is a provider of IT consulting and software services. We help
@@ -99,7 +109,7 @@ const Footer = () => {
           </div>
 
           {/* Our Services */}
-          <div>
+          <div  data-aos="fade-up">
             <h2 className="text-lg font-bold text-yellow-500 mb-4">Our Services</h2>
             <ul className="space-y-2 text-sm text-white">
             {services?.map((ser) => (
@@ -120,7 +130,7 @@ const Footer = () => {
           </div>
 
           {/* Hire Developers */}
-          <div>
+          <div  data-aos="fade-up">
             <h2 className="text-lg font-bold text-yellow-500 mb-4">Hire Developers</h2>
             <ul className="space-y-2 text-sm text-white">
             {developers?.map((dev) => (
@@ -144,7 +154,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div>
+          <div  data-aos="fade-up">
             <h2 className="text-lg font-bold text-yellow-500 mb-4">Newsletter</h2>
             <p className="text-sm leading-relaxed text-white">
             Want to be notified of the latest PIXALIVE TECHNOLOGY SERVICES news right away? We are happy to provide you with new information regularly.
@@ -154,7 +164,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="flex  justify-center mt-10 text-center text-sm  lg:mx-52  ">
+        <div   className="flex  justify-center mt-10 text-center text-sm  lg:mx-52  ">
           <p className="text-white bg-yellow-600 p-3 shadow-md rounded-sm w-[50%] ">Copyright © 2025 PIXALIVE TECH SERVICES</p>
         </div>
       </div>

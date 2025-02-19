@@ -3,11 +3,18 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail, MdAccessTimeFilled } from "react-icons/md";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { IoMdArrowDropdown } from "react-icons/io"; // Icon for dropdown button
-import { getServices } from "../Api/services";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: false, // Animation plays every time it enters the viewport
+          mirror: true, // Animation also plays when scrolling back up
+        });
+      }, []);
     return (
         <div className="w-full bg-[#13256B] text-white">
             {/* Mobile Button */}
@@ -23,7 +30,7 @@ const Header = () => {
             {/* Main Header Content */}
             <div className={`flex flex-col lg:flex-row items-center justify-center lg:justify-between px-6 lg:px-52 gap-6  transition-all duration-300 ${isOpen ? "block" : "hidden"} lg:flex`}>
 
-                <div className="flex flex-col lg:flex-row gap-4 text-center lg:text-left  lg:p-3">
+                <div  data-aos="fade-left" className="flex flex-col lg:flex-row gap-4 text-center lg:text-left  lg:p-3">
                     <div className="flex items-center gap-2">
                         <IoLocationSharp className="h-6 w-6 text-yellow-600 hover:text-white" />
                         <span className="hover:text-yellow-600 font-bold">Bengaluru, India</span>
@@ -34,7 +41,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-4 text-center lg:text-left items-center  lg:p-3">
+                <div  data-aos="fade-right" className="flex flex-col lg:flex-row gap-4 text-center lg:text-left items-center  lg:p-3">
                     <div className="flex items-center gap-2">
                         <MdAccessTimeFilled className="h-6 w-6 text-yellow-600 hover:text-white" />
                         <span className="hover:text-yellow-600 font-bold">9:30 AM – 6:00 PM</span>

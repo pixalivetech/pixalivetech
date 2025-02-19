@@ -5,6 +5,8 @@ import Header from "../../Components/header";
 import MainHeader from "../../Components/mainheader";
 import Footer from "../../Components/footer";
 import { WorkingSpace } from "../../Api/workingspace";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Workingspace = () => {
     const [workspaceData, setWorkspaceData] = useState(null);
@@ -26,7 +28,14 @@ const Workingspace = () => {
             setLoading(false);
         }
     };
-
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: false, // Animation plays every time it enters the viewport
+          mirror: true, // Animation also plays when scrolling back up
+        });
+      }, []);
     return (
         <div>
             <Header />
@@ -60,7 +69,7 @@ const Workingspace = () => {
                     workspaceData && (
                         <>
                             {/* Introduction */}
-                            <div className="mb-10">
+                            <div data-aos="zoom-in-up" className="mb-10">
                                 {workspaceData?.introduction?.length > 0 ? (
                                     workspaceData.introduction.map((paragraph, index) => (
                                         <p key={index} className="text-lg text-gray-700 mb-4">{paragraph}</p>
@@ -71,7 +80,7 @@ const Workingspace = () => {
                             </div>
 
                             {/* Facilities */}
-                            <div className="mb-12">
+                            <div data-aos="zoom-in-up" className="mb-12">
                                 <h3 className="font-semibold text-lg mb-4">Check Our Facilities:</h3>
                                 {workspaceData?.facilities?.length > 0 ? (
                                     <ul className="list-disc pl-6 text-gray-700">
@@ -90,7 +99,7 @@ const Workingspace = () => {
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                     {workspaceData?.waysOfWorking?.length > 0 ? (
                                         workspaceData.waysOfWorking.map((option, index) => (
-                                            <div key={index} className="p-4 border rounded-lg shadow-md">
+                                            <div data-aos="flip-left" key={index} className="p-4 border rounded-lg shadow-md">
                                                 <h4 className="font-bold text-lg mb-2">{option.type}</h4>
                                                 <p className="text-gray-700 mb-4">{option.description}</p>
                                                 <h5 className="font-semibold mb-2">Features:</h5>
@@ -115,7 +124,7 @@ const Workingspace = () => {
                 )}
             </div>
 
-            <Footer />
+            <div className="relative -z-50"> <Footer  /></div>
         </div>
     );
 };

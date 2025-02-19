@@ -6,7 +6,8 @@ import MainHeader from "../../Components/mainheader";
 import Footer from "../../Components/footer";
 import logo from "../../Assests/Images/stock-market.png";
 import { getClients } from "../../Api/ourClients";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Client = () => {
   const[partners, setPartners] = useState([]);
   useEffect(() => {
@@ -22,10 +23,22 @@ const Client = () => {
       console.log("Error fetching clients", error);
     }
   };
+
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: false, // Animation plays every time it enters the viewport
+        mirror: true, // Animation also plays when scrolling back up
+      });
+    }, []);
     return (
         <div>
-        <Header/>
-        <MainHeader/>
+       <div className="relative z-50">
+                <Header />
+                <MainHeader />
+            </div>
              <div className="relative bg-gray-900 h-[180px] -z-10 ">
       <img src={slide1} alt={slide1} className="w-full h-full  object-cover bg-black opacity-40 " />
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -41,12 +54,12 @@ const Client = () => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 py-16">
-      <h2 className="text-lg font-semibold text-center mb-8 text-gray-700">
+      <h2 data-aos="zoom-in-up" className="text-lg font-semibold text-center mb-8 text-gray-700">
         Together with our professional partners we provide our clients with the ultimate service, budgeting, scalability, and innovation for their needs.
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
         {partners.map((partner, index) => (
-          <div key={index} className="flex flex-col items-center">
+          <div data-aos="flip-left" key={index} className="flex flex-col items-center">
             <img
               src={partner.logo}
               alt={partner.name}
@@ -57,7 +70,7 @@ const Client = () => {
         ))}
       </div>
     </div>
-      <Footer/>
+    <div className="relative -z-50"> <Footer  /></div>
         </div>
     );
 };
