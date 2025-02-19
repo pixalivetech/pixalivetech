@@ -71,9 +71,6 @@ const MainHeader = () => {
                         { name: "Home", path: "/" },
                         { name: "About", path: "/About" },
                         { name: "Our Clients", path: "/Our-Clients" },
-                        { name: "Coworking Space", path: "/Co-working-Space" },
-                        { name: "Laptops Rental", path: "/Laptop-Rental" },
-                        { name: "Contact Us", path: "/Contact-us" },
                     ].map((item) => (
                         <Link
                             key={item.name}
@@ -142,7 +139,23 @@ const MainHeader = () => {
                             ))}
                         </div>
                     </div>
-
+                    {[
+                        { name: "Coworking Space", path: "/Co-working-Space" },
+                        { name: "Laptops Rental", path: "/Laptop-Rental" },
+                        { name: "Contact Us", path: "/Contact-us" },
+                    ].map((item) => (
+                        <Link
+                            key={item.name}
+                            to={item.path}
+                            className={`${activeItem === item.name
+                                    ? "text-yellow-600 border-b-4 border-yellow-600"
+                                    : ""
+                                } hover:text-yellow-600 hover:border-b-4 border-yellow-600 pb-2`}
+                            onClick={() => setActiveItem(item.name)}
+                        >
+                            {item.name}
+                        </Link>
+                    ))}
                     {/* Careers Dropdown */}
                     <div className="relative group">
                         <button
@@ -222,9 +235,6 @@ const MainHeader = () => {
                 { name: "Home", path: "/" },
                 { name: "About", path: "/About" },
                 { name: "Our Clients", path: "/Our-Clients" },
-                { name: "Coworking Space", path: "/Co-working-Space" },
-                { name: "Laptops Rental", path: "/Laptop-Rental" },
-                { name: "Contact Us", path: "/Contact-us" },
             ].map((item) => (
                 <Link
                     key={item.name}
@@ -284,7 +294,20 @@ const MainHeader = () => {
                     ))}
                 </div>
             </div>
-
+            {[
+                { name: "Coworking Space", path: "/Co-working-Space" },
+                { name: "Laptops Rental", path: "/Laptop-Rental" },
+                { name: "Contact Us", path: "/Contact-us" },
+            ].map((item) => (
+                <Link
+                    key={item.name}
+                    to={item.path}
+                    className={`${activeItem === item.name ? "text-yellow-600 border-b-4 border-yellow-600" : ""} hover:text-yellow-600 hover:border-b-4 border-yellow-600 pb-2`}
+                    onClick={() => setActiveItem(item.name)}
+                >
+                    {item.name}
+                </Link>
+            ))}
             {/* Careers Dropdown */}
             <div className="relative group z-10">
                 <button
