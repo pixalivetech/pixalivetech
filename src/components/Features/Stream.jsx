@@ -53,7 +53,7 @@ const AdvancedSolutions = () => {
     <section className=" py-24 px-4 sm:px-6 lg:px-20">
       <div className="max-w-[1280px] mx-auto">
         {/* Heading */}
-        <h2 className="text-4xl sm:text-[44px] font-bold text-black mb-20 leading-tight">
+        <h2 className="text-4xl sm:text-[44px] font-normal text-black mb-20 leading-tight">
           Advanced solutions for immersive <br className="hidden sm:block" />
           live streams
         </h2>
@@ -91,7 +91,7 @@ const AdvancedSolutions = () => {
 
         {/* CTA */}
         <div className="text-center mt-24">
-          <p className="text-[42px] font-semibold mb-6">
+          <p className="text-[42px] font-normal mb-6">
             Need other interactive live <br />
             stream features for your <br/>
             platform?

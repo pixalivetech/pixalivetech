@@ -8,7 +8,7 @@ import Faqfull from '../components/Home/Faqfull'
 
 const Services = () => {
   return (
-    <div>
+    <div className='max-w-[1280px] mx-auto'>
         <ServiceCards />
         <ServiceCardstwo />
         <ServiceCardsThree />

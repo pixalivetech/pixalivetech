@@ -33,14 +33,13 @@ const cardData = [
 
 const Servicelastcards = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 px-4 sm:px-6 md:px-8 py-8 max-w-[1200px] mx-auto">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-1 md:px-1 py-8 max-w-[1190px] mx-auto">
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="border border-[#B0B0B0] p-4 flex flex-col h-full min-h-[400px] justify-between"
+          className="border border-[#B0B0B0] p-4 flex flex-col h-full min-h-[390px] justify-between"
         >
-          {/* Image */}
-          <div className="w-full h-[200px] mb-4 overflow-hidden rounded-md">
+          <div className="w-full h-[200px] mb-4 overflow-hidden">
             <img
               src={card.image}
               alt={card.title}
@@ -48,9 +47,8 @@ const Servicelastcards = () => {
             />
           </div>
 
-          {/* Text Content */}
           <div className="text-center lg:text-left flex flex-col justify-between flex-1">
-            <h2 className="text-[20px] sm:text-[22px] lg:text-[24px] font-semibold mb-2">
+            <h2 className="text-[20px] sm:text-[22px] lg:text-[24px] font-normal mb-2">
               {card.title}
             </h2>
             <p className="text-[15px] sm:text-[16px] text-[#5D5D5D] leading-relaxed">
@@ -62,5 +60,6 @@ const Servicelastcards = () => {
     </div>
   );
 };
+
 
 export default Servicelastcards;

@@ -51,7 +51,7 @@ const Hero = () => {
                 {/* Image - Medium Width */}
                 <div className="mt-20 flex justify-center">
                     <img
-                        className="w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[700px] sm:max-w-[1360px] rounded-[4px] object-cover"
+                        className="w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[700px] sm:max-w-[1360px]  object-cover"
                         src={hero}
                         alt="hero img"
                         loading="lazy"
