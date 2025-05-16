@@ -57,7 +57,7 @@
                 onClick={() => setActiveIndex(idx)}
                 className={`text-left cursor-pointer p-3 transition-all duration-300 
                     ${idx === activeIndex
-                    ? "font-bold text-black border-b-2 border-black"
+                    ? "font-bold text-black border-b-1 border-black"
                     : "text-[#B0B0B0] border-b"
                     }`}
                 >

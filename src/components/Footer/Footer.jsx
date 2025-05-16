@@ -39,6 +39,7 @@ const Footer = () => {
               <div className="flex flex-col items-start gap-2">
                 <a href="/" className="hover:underline cursor-pointer">Home</a>
                 <a href="/service" className="hover:underline cursor-pointer">Services</a>
+                <a href="/features" className="hover:underline cursor-pointer">Features</a>
                 <a href="/hireus" className="hover:underline cursor-pointer">Hire Us</a>
                 <a href="/contact" className="hover:underline cursor-pointer">Contact</a>
               </div>
@@ -51,9 +52,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 hover:underline cursor-pointer"
                 >
-                  <FaFacebookF />
+                  
                   Facebook
-                  <span className="transition-transform duration-200 transform group-hover:translate-x-1">→</span>
+                  <FaFacebookF />
                 </a>
                 <a
                   href="https://www.instagram.com/pixalivetech/?next=%2F"
@@ -61,9 +62,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 hover:underline cursor-pointer"
                 >
-                  <FaInstagram />
                   Instagram
-                  <span className="transition-transform duration-200 transform group-hover:translate-x-1">→</span>
+                                    <FaInstagram />
+
                 </a>
                 <a
                   href="https://www.linkedin.com/company/pixalive-technology-network/?viewAsMember=true"
@@ -71,9 +72,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 hover:underline cursor-pointer"
                 >
-                  <FaLinkedinIn />
                   LinkedIn
-                  <span className="transition-transform duration-200 transform group-hover:translate-x-1">→</span>
+                                    <FaLinkedinIn />
+
                 </a>
                 <a
                   href="https://x.com/Pixalivetech"
@@ -81,9 +82,9 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2 hover:underline cursor-pointer"
                 >
-                  <FaXTwitter />
                   Twitter
-                  <span className="transition-transform duration-200 transform group-hover:translate-x-1">→</span>
+                                    <FaXTwitter />
+
                 </a>
               </div>
             </div>

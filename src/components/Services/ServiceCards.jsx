@@ -12,7 +12,7 @@ const ServiceCards = () => {
           <div className="w-full h-full lg:h-[100%] rounded-md overflow-hidden">
             <video
               src={service1}
-              className="w-full h-100 object-cover rounded-md"
+              className="w-full h-100 object-cover rounded-md loading-lazy "
               autoPlay
               loop
               muted
@@ -45,7 +45,7 @@ const ServiceCards = () => {
           <img
             src={service2}
             alt="Mobile App"
-            className="w-full h-auto rounded-md object-contain"
+            className="w-full h-auto rounded-md object-contain loading-lazy"
           />
         </div>
 
