@@ -1,16 +1,17 @@
 export default function ComparePlans() {
   return (
-    <div className="  max-w-[1280px] mx-auto text-black font-medium px-2 md:px-16 py-16">
-      <h2 className="text-3xl font-semibold p-6 mb-6">Compare Plans</h2>
+    <div className="max-w-[1280px] mx-auto text-black font-medium px-2 md:px-16 py-16">
+      <h2 className="text-3xl font-semibold p-4 mb-6">Compare Plans</h2>
       <div className="overflow-x-auto">
         <table className="w-full">
           <thead>
-            <tr className="text-left">
-              <th className="py-3 px-4 text-sm font-medium">FEATURES</th>
-              <th className="py-3 px-4 text-sm font-medium">STANDARD</th>
-              <th className="py-3 px-4 text-sm font-medium bg-black text-white">PRO</th>
-            </tr>
-          </thead>
+  <tr className="text-left">
+    <th className="py-3 px-4 text-sm font-medium">FEATURES</th>
+    <th className="py-3 px-4 text-sm font-medium text-center">STANDARD</th>
+    <th className="py-3 px-4 text-sm font-medium bg-black text-white text-center">PRO</th>
+  </tr>
+</thead>
+
           <tbody>
             {renderSection("LIVE STREAMING")}
             {renderRow("Live streaming player", true, true)}
@@ -53,7 +54,7 @@ function renderSection(title) {
     <tr>
       <td className="py-3 px-4 font-semibold">{title}</td>
       <td className="py-3 px-4"></td>
-      <td className="py-3 px-4 bg-black text-white"></td>
+      <td className="py-3 px-4 bg-black text-white text-center align-middle"></td>
     </tr>
   );
 }
@@ -62,8 +63,10 @@ function renderRow(name, standard, pro) {
   return (
     <tr>
       <td className="py-2 px-4 text-sm">{name}</td>
-      <td className="py-2 px-4 text-sm">{formatCell(standard)}</td>
-      <td className="py-2 px-4 text-sm bg-black text-white">{formatCell(pro)}</td>
+      <td className="py-2 px-4 text-sm text-center align-middle">{formatCell(standard)}</td>
+      <td className="py-2 px-4 text-sm bg-black text-white text-center align-middle">
+        {formatCell(pro)}
+      </td>
     </tr>
   );
 }
