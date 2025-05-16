@@ -65,7 +65,7 @@ const Achievements = () => {
             className="flex flex-col sm:flex-row sm:justify-between border-t border-[#E7E7E7] pt-6"
           >
             <div className="flex flex-col sm:flex-row sm:items-start sm:gap-6 sm:max-w-[75%] w-full">
-              <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 sm:w-1/2 w-full">
+              <h3 className="text-xl sm:text-2xl font-normal text-black sm:w-1/2 w-full">
                 {item.title}
               </h3>
               <p className="text-[#5D5D5D] text-sm sm:text-base sm:flex-1 mt-2 sm:mt-0">
