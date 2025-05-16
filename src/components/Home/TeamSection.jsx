@@ -32,7 +32,7 @@ export default function TeamSection() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
           <div className="flex-1">
             <div className="text-sm pl-2 font-medium text-black mb-2">
-              Who we are?
+              OUR TEAM
             </div>
           </div>
           <div className="mt-4 lg:mt-0">

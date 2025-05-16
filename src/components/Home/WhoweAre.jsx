@@ -30,14 +30,8 @@ const WhoweAre = () => {
                                 <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
                             </a>
                         </div>
-
-
                     </div>
-
-
                 </div>
-
-
             </div>
         </section>
     );

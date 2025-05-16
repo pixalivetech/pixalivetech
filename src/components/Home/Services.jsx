@@ -65,7 +65,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+    <div className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-2 sm:py-2">
       {services.map((service, index) => (
         <div
           key={index}
@@ -84,7 +84,7 @@ const Services = () => {
               {service.title}
             </h3>
           </div>
-          <p className="text-[#5D5D5D] text-base sm:text-[17px] md:text-[18px] w-full md:w-[325px] leading-[150%] mt-4 md:mt-0">
+          <p className="text-[#5D5D5D] text-base sm:text-[17px] md:text-[18px] w-full md:w-[355px] leading-[150%] mt-4 md:mt-0">
             {service.description}
           </p>
         </div>

@@ -7,7 +7,7 @@ const ServiceHeading = () => {
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-10">
                 {/* Left Section */}
                 <div className="flex-1">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal leading-tight">
                         Service & <br />
                         Works <span className="text-base font-normal">(5 - 10)</span>
                     </h2>
@@ -26,11 +26,11 @@ const ServiceHeading = () => {
                 {/* Right content */}
                 <div className="w-full lg:w-1/2 flex flex-col gap-4">
                     <p className="text-base sm:text-md md:text-xl text-[#5D5D5D]">
-                        We’ve built long-lasting partnerships with the most ambitious brands across the globe. We’ve built long-lasting partnerships with the most ambitious brands across the globe. We’ve built long-lasting partnerships with the most ambitious brands across the globe.
+                        We’ve built long-lasting partnerships with the most ambitious brands across the globe.
                     </p>
                     <a
                         href="/service"
-                        className="inline-flex self-end mt-12 items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
+                        className="inline-flex self-end mt-2 items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
                     >
                         Explore
                         <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
