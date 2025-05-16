@@ -50,7 +50,7 @@ const Hero = () => {
         <div className="mt-20 flex justify-center">
           <img
             ref={imgRef}
-            className={`w-full sm:max-w-[1260px] h-auto rounded-[12px] transition-transform duration-[1500ms] ease-in-out transform ${
+            className={`w-full sm:max-w-[1260px] h-auto transition-transform duration-[1500ms] ease-in-out transform ${
               isVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"
             }`}
             src={hero}
