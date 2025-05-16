@@ -1,18 +1,18 @@
 import React from "react";
-
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <div className="bg-black px-6 md:px-16 py-10 overflow-hidden relative">
       <div className="w-full max-w-7xl mx-auto text-white">
         <div className="flex flex-col md:flex-row justify-between gap-10 text-sm">
+          
           {/* Left Section */}
           <div className="w-full md:w-1/2">
             <h2 className="text-2xl sm:text-3xl font-normal mt-4 mb-6 text-left">
               Let's work Together
             </h2>
 
-            {/* Email */}
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=pixalivetech@gmail.com"
               target="_blank"
@@ -21,8 +21,6 @@ const Footer = () => {
             >
               contact@pixalivetech.com
             </a>
-
-            {/* WhatsApp */}
             <a
               href="https://wa.me/918778584566"
               target="_blank"
@@ -35,8 +33,8 @@ const Footer = () => {
 
           {/* Right Section */}
           <div className="w-full md:w-1/2 flex flex-col items-start md:items-end">
-            {/* Two-column layout on mobile and above */}
             <div className="w-full max-w-md text-base sm:text-lg grid grid-cols-2 gap-6">
+              
               {/* Navigation */}
               <div className="flex flex-col items-start gap-2">
                 <a href="/" className="hover:underline cursor-pointer">Home</a>
@@ -45,39 +43,47 @@ const Footer = () => {
                 <a href="/contact" className="hover:underline cursor-pointer">Contact</a>
               </div>
 
-              {/* Social Links */}
+              {/* Social Links with icons and animated arrow */}
               <div className="flex flex-col items-start gap-2">
                 <a
                   href="https://www.facebook.com/profile.php?id=61572736722664"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline cursor-pointer"
+                  className="group flex items-center gap-2 hover:underline cursor-pointer"
                 >
+                  <FaFacebookF />
                   Facebook
+                  <span className="transition-transform duration-200 transform group-hover:translate-x-1">→</span>
                 </a>
                 <a
                   href="https://www.instagram.com/pixalivetech/?next=%2F"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline cursor-pointer"
+                  className="group flex items-center gap-2 hover:underline cursor-pointer"
                 >
+                  <FaInstagram />
                   Instagram
+                  <span className="transition-transform duration-200 transform group-hover:translate-x-1">→</span>
                 </a>
                 <a
                   href="https://www.linkedin.com/company/pixalive-technology-network/?viewAsMember=true"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline cursor-pointer"
+                  className="group flex items-center gap-2 hover:underline cursor-pointer"
                 >
+                  <FaLinkedinIn />
                   LinkedIn
+                  <span className="transition-transform duration-200 transform group-hover:translate-x-1">→</span>
                 </a>
-                 <a
+                <a
                   href="https://x.com/Pixalivetech"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:underline cursor-pointer"
+                  className="group flex items-center gap-2 hover:underline cursor-pointer"
                 >
+                  <FaXTwitter />
                   Twitter
+                  <span className="transition-transform duration-200 transform group-hover:translate-x-1">→</span>
                 </a>
               </div>
             </div>
@@ -89,7 +95,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Branding - Pixalive */}
+        {/* Branding */}
         <div className="mt-16 flex items-center justify-center relative">
           <div className="text-[3rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] bg-gradient-to-b from-white to-black bg-clip-text text-transparent text-center font-bold leading-none w-full">
             Pixalive

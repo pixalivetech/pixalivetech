@@ -74,11 +74,11 @@ const Services = () => {
           }`}
         >
           <div className="flex flex-col items-start space-y-2 md:w-1/2">
-            <span className="text-[#B0B0B0] text-2xl sm:text-[26px] md:text-[30px] font-semibold">
+            <span className="text-[#B0B0B0] text-2xl sm:text-[26px] md:text-[30px] font-normal">
               {service.id}
             </span>
             <h3
-              className="text-black text-2xl mt-2.5 sm:text-2xl md:text-[30px] font-semibold leading-[130%] capitalize"
+              className="text-black text-2xl mt-2.5 sm:text-2xl md:text-[30px] font-normal leading-[130%] capitalize"
               style={{ fontFamily: 'Lufga' }}
             >
               {service.title}

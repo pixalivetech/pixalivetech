@@ -28,13 +28,14 @@ const ServiceHeading = () => {
                     <p className="text-base sm:text-md md:text-xl text-[#5D5D5D]">
                         We’ve built long-lasting partnerships with the most ambitious brands across the globe.
                     </p>
-                    <a
-                        href="/service"
-                        className="inline-flex self-end mt-2 items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
-                    >
-                        Explore
-                        <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
-                    </a>
+                   <a
+    href="/service"
+    className="mt-2 flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
+>
+    Explore
+    <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
+</a>
+
                 </div>
             </div>
         </div>

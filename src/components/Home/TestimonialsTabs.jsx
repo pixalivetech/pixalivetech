@@ -42,7 +42,7 @@
     return (
         <div className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
         <div className="flex justify-between items-start flex-wrap gap-2">
-            <h4 className="text-black text-sm font-[20px]-medium mb-1">WHAT OUR CLIENTS SAY</h4>
+            <h4 className="text-black text-sm font-[20px]-medium mb-1">What our clients say</h4>
             <h2 className="text-2xl md:text-3xl font-normal text-start w-full md:w-[700px] leading-[150%] mb-2">
             Our clients share real stories of growth, trust, and successful collaboration with us.
             </h2>
@@ -105,7 +105,7 @@
 
             {/* Static Stats */}
             <div className="w-full md:w-1/3 flex flex-col md:gap-10 gap-4">
-                <div className="bg-white p-4 text-center cursor-pointer hover:scale-[1.05] transition-all duration-300 ease-in-out shadow-md">
+                <div className="bg-white p-4 text-center cursor-pointer hover:scale-[1.05] transition-all duration-300 ease-in-out ">
                 <p className="text-[19px] text-black">Active Users</p>
                 <p className="text-[36px] font-normal">
                     <CountUp
@@ -117,7 +117,7 @@
                     />
                 </p>
                 </div>
-                <div className="bg-white p-4 text-center cursor-pointer hover:scale-[1.05] transition-all duration-300 ease-in-out shadow-md">
+                <div className="bg-white p-4 text-center cursor-pointer hover:scale-[1.05] transition-all duration-300 ease-in-out ">
                 <p className="text-[19px] text-black">Agent Growth</p>
                 <p className="text-[36px] font-normal">
                     <CountUp
