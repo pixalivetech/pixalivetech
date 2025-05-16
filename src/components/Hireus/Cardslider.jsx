@@ -54,7 +54,7 @@ const CardSlider = () => {
         const { scrollLeft, scrollWidth, clientWidth } = containerRef.current;
         const nextScroll = scrollLeft + clientWidth;
         containerRef.current.scrollTo({
-          left: nextScroll >= scrollWidth ? 0 : nextScroll,
+          left: nextScroll >= scrollWidth ? 8 : nextScroll,
           behavior: "smooth",
         });
       }
@@ -63,8 +63,8 @@ const CardSlider = () => {
   }, []);
 
   return (
-    <div className="w-full py-5 px-4">
-  <div className="max-w-screen-xl mx-auto relative px-4 lg:px-12">
+  <div className="w-full py-5 px-4 font-lufga md:mt-20">
+  <div className="max-w-screen-xl mx-auto relative px-4 lg:px-12 ">
     <div
       ref={containerRef}
       className="flex gap-4 overflow-x-auto scroll-smooth hide-scrollbar snap-x snap-mandatory"
@@ -75,10 +75,10 @@ const CardSlider = () => {
           className="snap-start min-w-[60%] sm:min-w-[28%] lg:min-w-[26%] max-w-xs flex-shrink-0 border border-gray-200 shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
         >
           <img src={card.icon} alt="icon" className="w-7 h-7 mb-2 loading-lazy" />
-          <h3 className="text-base font-semibold leading-[180%] text-gray-900 mb-2">
+          <h3 className="text-base font-semibold leading-[180%] text-[#000000] mb-2">
             {card.title}
           </h3>
-          <p className="text-gray-600 text-sm leading-[170%]">
+          <p className="text-[#5D5D5D] text-sm leading-[170%]">
             {card.description}
           </p>
         </div>
