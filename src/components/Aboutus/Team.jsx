@@ -26,7 +26,7 @@ const team = [
 
   { name: "Vijay K", role: "Front end Developer", image: Vijay, alt: "Vijay" },
   null,
-  { name: "Somanathan", role: "UI/UX Developer", image: Somanathan, alt: "Somanathan" },
+  { name: "Somanathan", role: "UI/UX Designer", image: Somanathan, alt: "Somanathan" },
   { name: "Kesavan", role: "UI/UX Designer", image: Kesavan, alt: "Kesavan" },
 
   { name: "Kathirvel", role: "Software Developer", image: Kathirvel, alt: "Kathirvel" },
