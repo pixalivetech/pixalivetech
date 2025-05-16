@@ -83,7 +83,7 @@
                 <img
                     src={active.image}
                     alt={active.name}
-                    className="rounded-md w-full h-auto object-cover"
+                    className="w-full h-auto object-cover"
                     loading="lazy"
                 />
                 </motion.div>

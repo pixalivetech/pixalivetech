@@ -43,20 +43,20 @@ const team = [
 const TeamSection = () => {
   return (
     <div className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
-      <h2 className="text-2xl md:text-3xl font-semibold mb-12">Teams</h2>
+      <h2 className="text-2xl md:text-3xl font-normal mb-12">Teams</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
         {team.map((member, index) => (
           <div key={index} className="w-full flex flex-col items-center">
             {member ? (
               <>
-                <div className="w-40 h-52 bg-gray-300 rounded-md mb-3 overflow-hidden flex items-center justify-center">
+                <div className="w-40 h-52 bg-gray-300  mb-3 overflow-hidden flex items-center justify-center">
                   {member.image ? (
                     <img
                       src={member.image}
                       alt={member.alt}
                       loading="lazy"
-                      className="object-cover w-full h-full"
+                      className="object-cover w-full h-full loading-lazy"
                     />
                   ) : (
                     <span className="text-4xl text-white">?</span>
