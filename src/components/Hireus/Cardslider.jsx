@@ -74,7 +74,7 @@ const CardSlider = () => {
           key={index}
           className="snap-start min-w-[60%] sm:min-w-[28%] lg:min-w-[26%] max-w-xs flex-shrink-0 border border-gray-200 shadow-sm p-6 hover:shadow-md transition-shadow duration-300"
         >
-          <img src={card.icon} alt="icon" className="w-7 h-7 mb-2 loading-lazy" />
+          <img src={card.icon} alt="icon" loading="lazy" className="w-7 h-7 mb-2 " />
           <h3 className="text-base font-semibold leading-[180%] text-[#000000] mb-2">
             {card.title}
           </h3>

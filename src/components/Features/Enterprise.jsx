@@ -59,10 +59,10 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className=" py-20 px-4 sm:px-6 lg:px-10 text-black">
+    <section className=" py-20 px-4  max-w-[1280px] mx-auto sm:px-6 lg:px-10 text-black">
       <div className="max-w-[1280px] mx-auto">
         {/* Title */}
-        <h2 className="text-[30px] sm:text-[36px] md:text-[44px] font-semibold leading-[120%] tracking-tight mb-14">
+        <h2 className="text-[30px] sm:text-[36px] md:text-[44px] font-normal leading-[120%] tracking-tight mb-14">
           Core Features for Enterprise-
           <br className="hidden sm:block" />
           Level Live Streaming
@@ -80,7 +80,7 @@ const FeaturesSection = () => {
                 alt={feature.title}
                 className="w-[48px] h-[48px] mb-5"
               />
-              <h3 className="text-[18px] font-semibold mb-3">{feature.title}</h3>
+              <h3 className="text-[18px] font-normal mb-3">{feature.title}</h3>
               <p className="text-[15px] leading-[1.7] text-gray-700">
                 {feature.description}
               </p>

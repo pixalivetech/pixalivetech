@@ -169,7 +169,7 @@ export default function ToolsTechSection() {
                 loader="lazy"
                 className="min-w-[300px] w-50 h-53 flex-shrink-0 p-4 transition duration-300 flex flex-col gap-3 items-center justify-between"
               >
-                <img src={app.icon} alt={app.name} className="w-19 h-16 mx-auto loading-lazy" />
+                <img src={app.icon} alt={app.name} loading='lazy' className="w-19 h-16 mx-auto loading-lazy" />
                 <h3 className="text-center text-xl font-lugha underline text-gray-800">{app.name}</h3>
                 <p className="text-center text-sm line-clamp-3 leading-snug text-gray-600">{app.description}</p>
               </a>

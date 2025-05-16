@@ -4,7 +4,7 @@ const WhoweAre = () => {
     return (
         <section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 text-black">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-12">
-                
+
                 {/* Left - Section Title */}
                 <div className="w-full lg:w-[400px]">
                     <h3 className="text-lg sm:text-[16px] font-normal text-black">
@@ -26,12 +26,15 @@ const WhoweAre = () => {
                             </p>
                             <a
                                 href="/aboutus"
-                                className="inline-flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
+                                className="relative inline-flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
                                 aria-label="Read more about us"
                             >
                                 More About Us
                                 <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
+
+                                <span className="absolute left-0 -bottom-0.5 h-px w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
                             </a>
+
                         </div>
 
                         {/* Paragraph Block 2 */}

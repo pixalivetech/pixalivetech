@@ -21,6 +21,7 @@ const ScrollToTop = () => {
       <button
         onClick={scrollToTop}
         aria-label="Scroll to top"
+        title="Scroll to top" // ✅ Tooltip added here
         style={{
           position: 'fixed',
           bottom: '30px',
