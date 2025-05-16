@@ -60,7 +60,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8 font-lufga font-semibold text-[18px] leading-[130%] relative">
+        <nav className="hidden md:flex space-x-8 font-lufga font-medium text-[18px] leading-[130%] relative">
           {navItems.map((item) =>
             item.submenu ? (
               <div className="relative group" key={item.label}>
@@ -97,7 +97,7 @@ const Header = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className={`inline-flex items-center text-[18px] font-semibold border-black hover:opacity-80 ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
+            className={`inline-flex items-center text-[18px] font-medium border-black hover:opacity-80 ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
           >
             Lets talk ↗
           </Link>
