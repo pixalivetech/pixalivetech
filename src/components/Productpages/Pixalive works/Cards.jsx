@@ -115,7 +115,7 @@ const features = [
   },
   {
     title: "Custom Branded Domain",
-    desc: "Deploy all services under custom domains with complete branding customization for client-facing interfaces."
+    desc: "Deploy all services under custom domains with complete branding customization for a client-facing interfaces."
   },
   {
     title: "Mobile App (iOS & Android)",
