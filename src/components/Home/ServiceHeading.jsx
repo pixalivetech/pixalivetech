@@ -32,9 +32,14 @@ const ServiceHeading = () => {
     href="/service"
     className="mt-2 flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group"
 >
-    Explore
+    <span className="relative inline-block">
+        <span className="group-hover:text-black transition-colors duration-200">Explore</span>
+        <span className="absolute left-0 -bottom-0.5 h-px w-0 bg-black transition-all duration-300 group-hover:w-full"></span>
+    </span>
     <span className="transform transition-transform duration-200 group-hover:translate-x-1">→</span>
 </a>
+        
+
 
                 </div>
             </div>

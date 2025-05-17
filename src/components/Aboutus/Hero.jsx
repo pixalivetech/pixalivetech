@@ -5,7 +5,7 @@ const AboutSection = () => {
     <div className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       {/* Heading */}
       <h1 className="text-3xl md:text-5xl leading-tight tracking-tight text-black mb-12">
-        At Pixalive Technology Services, we don’t just <br /> build technology—we engineer 
+        At Pixalive Technology Services, we don’t just <br /> build technology—we engineer
         <br className="hidden md:block" />
         transformation
       </h1>
@@ -38,8 +38,9 @@ const AboutSection = () => {
           src={Hero}
           alt="Office Workspace"
           className="w-full object-cover"
-          loading='lazy'
+          loading="lazy"
         />
+
       </div>
 
       {/* Our Culture Section */}

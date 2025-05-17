@@ -9,9 +9,9 @@ const Hero = () => {
     const handleBookDemo = () => {
         navigate("/contact");
         window.scrollTo({
-        top: 0,
-        behavior: "smooth" // Optional: for smooth animation
-    }); // ✅ Replace with your target path
+            top: 0,
+            behavior: "smooth" // Optional: for smooth animation
+        }); // ✅ Replace with your target path
     };
 
     return (
@@ -19,21 +19,21 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Heading */}
                 <h1 className="font-lufga font-normal text-[26px] leading-[130%] sm:text-[32px] sm:leading-[140%] md:text-[40px] md:leading-[150%] lg:text-[52px] lg:leading-[160%] tracking-tight mb-10">
-                    An innovative partnership delivering high-performance live streaming, IT infrastructure, 
+                    An innovative partnership delivering high-performance live streaming, IT infrastructure,
                     and scalable digital solutions tailored for modern businesses.
                 </h1>
 
                 {/* Paragraphs */}
                 <div className="grid gap-6 sm:gap-8 md:grid-cols-3 mt-8 sm:text-[15px] md:text-base">
                     <div className="hidden md:block" /> {/* Empty column for spacing */}
-                    
+
                     <p className="font-normal text-[18px] leading-[170%] tracking-normal">
-                        Pixalive Technology Services specializes in building scalable software solutions, 
+                        Pixalive Technology Services specializes in building scalable software solutions,
                         cloud systems, and enterprise-grade platforms that empower digital transformation.
                     </p>
 
                     <p className="font-normal text-[18px] leading-[170%] tracking-normal">
-                        In partnership with Belive Technology, we bring advanced live streaming capabilities, 
+                        In partnership with Belive Technology, we bring advanced live streaming capabilities,
                         interactive tools, and end-to-end support to maximize user engagement and business growth.
                     </p>
                 </div>
@@ -51,10 +51,12 @@ const Hero = () => {
                 {/* Image - Medium Width */}
                 <div className="mt-20 flex justify-center">
                     <img
-                        className="w-full sm:max-w-[1360px] h-[700px] rounded-[19px]"
+                        className="w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[700px] sm:max-w-[1360px]  object-cover"
                         src={hero}
                         alt="hero img"
+                        loading="lazy"
                     />
+
                 </div>
             </div>
         </section>

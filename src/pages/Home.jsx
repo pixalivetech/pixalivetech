@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import Hero from '../components/Home/Hero'
 import WhoweAre from '../components/Home/WhoweAre'
 import Achievements from '../components/Home/Achievements'
@@ -11,7 +11,12 @@ import Services from '../components/Home/Services'
 import TestimonialsTabs from '../components/Home/TestimonialsTabs'
 import TeamSection from '../components/Home/TeamSection'
 
+
+ 
 const Home = () => {
+   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   return (
     <>
       <div className='py-0'>

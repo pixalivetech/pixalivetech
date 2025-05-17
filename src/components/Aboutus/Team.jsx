@@ -56,7 +56,7 @@ const TeamSection = () => {
                       src={member.image}
                       alt={member.alt}
                       loading="lazy"
-                      className="object-cover w-full h-full loading-lazy"
+                      className="object-cover w-full h-full"
                     />
                   ) : (
                     <span className="text-4xl text-white">?</span>

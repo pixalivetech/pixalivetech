@@ -62,6 +62,7 @@ const AgileCycle = () => {
                 src={segmentImage}
                 alt=""
                 className="absolute inset-0 w-full h-full"
+                loading='lazy'
               />
               <div
                 className="absolute inset-0 flex justify-center items-center"

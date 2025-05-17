@@ -20,7 +20,7 @@ const teamMembers = [
   },
   {
     name: 'Murugan',
-    role: 'Chief DevOps Expert',
+    role: 'Lead product Engineer',
     image: murugan,
   },
 ];

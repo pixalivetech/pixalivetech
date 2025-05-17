@@ -21,6 +21,7 @@ export default function HowWeWork() {
             src={LifeCycle}
             alt="Product Life Cycle"
             className="w-41 h-52 md:w-120 md:h-120"
+            loading='lazy'
           />
         </div>
 
