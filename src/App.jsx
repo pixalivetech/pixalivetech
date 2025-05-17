@@ -15,6 +15,7 @@ import Livestreaming from "./pages/Livestreaming";
 import Liveshopping from "./pages/Liveshopping";
 import Liveedutainment from "./pages/Liveedutainment";
 import ScrollToTop from "./components/ScrollToTop";
+import Pixaliveworks from "./pages/Pixaliveworks";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/products/live-streaming" element={<Livestreaming />} />
         <Route path="/products/live-shopping" element={<Liveshopping />} />
         <Route path="/products/live-edutainment" element={<Liveedutainment />} />
+        <Route path="/products/pixalive-work" element={<Pixaliveworks/>} />
 
       </Routes>
       <Footer />

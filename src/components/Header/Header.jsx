@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import logo from './../../assets/imgs/home/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -21,6 +21,7 @@ const Header = () => {
         { label: 'Social Live Streaming', path: '/products/live-streaming' },
         { label: 'Live Shopping', path: '/products/live-shopping' },
         { label: 'Live Edutainment', path: '/products/live-edutainment' },
+        { label: 'Pixalive work', path: '/products/pixalive-work' },
       ],
     },
     { label: 'Features', path: '/features' },
@@ -65,9 +66,10 @@ const Header = () => {
             item.submenu ? (
               <div className="relative group" key={item.label}>
                 <span
-                  className={`cursor-default ${isActive(item.path) ? 'underline underline-offset-4' : ''} hover:opacity-80`}
+                  className={`cursor-pointer flex items-center gap-1 ${isActive(item.path) ? 'underline underline-offset-4' : ''}`}
                 >
                   {item.label}
+                  <ChevronDown className="transition-transform duration-200 group-hover:rotate-180" size={16} />
                 </span>
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-200 z-50">
                   {item.submenu.map((subItem) => (
@@ -141,10 +143,14 @@ const Header = () => {
             item.submenu ? (
               <div key={item.label} className="relative" ref={submenuRef}>
                 <div
-                  className="hover:opacity-75 cursor-pointer"
+                  className="hover:opacity-75 cursor-pointer flex items-center justify-between"
                   onClick={() => setMobileSubmenuOpen(!mobileSubmenuOpen)}
                 >
-                  {item.label}
+                  <span>{item.label}</span>
+                  <ChevronDown
+                    className={`transition-transform duration-200 ${mobileSubmenuOpen ? 'rotate-180' : ''}`}
+                    size={16}
+                  />
                 </div>
                 {mobileSubmenuOpen && (
                   <div className="pl-4 mt-2 space-y-2">
