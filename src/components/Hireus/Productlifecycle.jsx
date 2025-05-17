@@ -3,7 +3,7 @@ import LifeCycle from './../../assets/imgs/Hireus/lifecycle.png';
 
 export default function HowWeWork() {
   return (
-    <div className="min-h-screen px-4 py-8 md:px-16 lg:px-45 text-[#000000] font-lufga">
+    <div className=" p-4 w-full max-w-[1200px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row justify-between md:mt-23 mt-0 items-start md:items-center">
         <h2 className="text-md font-normal md:mb-23 mb-0  text-[#000000]">How We Work</h2>

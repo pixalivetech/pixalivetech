@@ -23,7 +23,7 @@ const getLabelStyle = (position) => {
     case 'top':
       return 'bottom-[120%] left-1/2 -translate-x-1/2';
     case 'bottom':
-      return 'top-[110%] left-1/2 -translate-x-1/2';
+      return 'top-[100%] left-1/2 -translate-x-1/2';
     case 'left':
       return 'right-[110%] top-1/2 -translate-y-1/2 text-right';
     case 'right':

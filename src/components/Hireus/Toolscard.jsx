@@ -151,14 +151,17 @@ const apps = [
 
 export default function ToolsTechSection() {
   return (
-    <div className="px-4 py-16 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-sm mb-1 font-normal text-black">Tools & Tech Supported</h2>
-        <div className="text-3xl sm:text-2xl font-lufga leading-[180%] text-gray-900 ml-0 sm:ml-100 text-center sm:text-left">
-          <p>We partner with industry leaders to co-create value, scale innovation, and deliver impactful solutions.</p>
-        </div>
+    <div className="px-4 py-16 sm:px-6 lg:px-8 md:mt-14 mt-0">
+      <div className="max-w-6xl  mx-auto">
+      <div className="flex flex-col md:flex-row justify-between md:mt-23 mt-0 items-start md:items-center">
+        <h2 className="text-md font-normal md:mb-23 mb-0  text-[#000000]">Tools & Tech Supported</h2>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl mt-5 md:mt-0 font-lufga  max-w-2xl leading-[150%] md:leading-[140%] text-left">
+        We partner with industry leaders to co-create value, scale innovation, and deliver impactful solutions.
+        </h1>
+      </div>
+        
 
-        <div className="mt-35 overflow-x-auto md:overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300">
+        <div className="md:mt-40 mt-14 overflow-x-auto md:overflow-x-auto scrollbar-thin scrollbar-thumb-gray-300">
           <div className="flex gap-6 min-w-max max-w-full">
             {apps.map((app, index) => (
               <a
@@ -170,8 +173,8 @@ export default function ToolsTechSection() {
                 className="min-w-[300px] w-50 h-53 flex-shrink-0 p-4 transition duration-300 flex flex-col gap-3 items-center justify-between"
               >
                 <img src={app.icon} alt={app.name} className="w-19 h-16 mx-auto loading-lazy" />
-                <h3 className="text-center text-xl font-lugha underline text-gray-800">{app.name}</h3>
-                <p className="text-center text-sm line-clamp-3 leading-snug text-gray-600">{app.description}</p>
+                <h3 className="text-center text-xl font-lugha underline text-[#000000]">{app.name}</h3>
+                <p className="text-center text-sm line-clamp-3 font-lufga leading-snug text-[#5D5D5D]">{app.description}</p>
               </a>
             ))}
           </div>
