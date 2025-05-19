@@ -10,11 +10,12 @@ import ServiceHeading from '../components/Home/ServiceHeading'
 import Services from '../components/Home/Services'
 import TestimonialsTabs from '../components/Home/TestimonialsTabs'
 import TeamSection from '../components/Home/TeamSection'
+import OurProducts from '../components/Home/OurProducts'
 
 
- 
+
 const Home = () => {
-   useEffect(() => {
+  useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
   return (
@@ -25,8 +26,9 @@ const Home = () => {
         <Achievements />
         <Strategy />
         <CardsHome />
-        <ServiceHeading/>
+        <ServiceHeading />
         <Services />
+        <OurProducts />
         <TestimonialsTabs />
         <Faq />
         <TeamSection />
