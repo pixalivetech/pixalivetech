@@ -21,7 +21,7 @@ const Header = () => {
         { label: 'Social Live Streaming', path: '/products/live-streaming' },
         { label: 'Live Shopping', path: '/products/live-shopping' },
         { label: 'Live Edutainment', path: '/products/live-edutainment' },
-        { label: 'Pixalive work', path: '/products/pixalive-work' },
+        { label: 'Pixalive works', path: '/products/pixalive-work' },
       ],
     },
     { label: 'Features', path: '/features' },
