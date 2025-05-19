@@ -1,7 +1,7 @@
     import React, { useState } from "react";
     import CountUp from "react-countup";
     import { motion, AnimatePresence } from "framer-motion";
-    import rajasekar from './../../assets/imgs/home/testimonial.png';
+    import rajasekar from './../../assets/imgs/home/team1.png';
     import penugonda from './../../assets/imgs/home/penugonda.png';
     import dey from './../../assets/imgs/home/dey.png';
 
