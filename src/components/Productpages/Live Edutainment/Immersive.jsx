@@ -25,12 +25,12 @@ const VideoCommerceSection = () => {
             muted
             loop
             playsInline
-            className="w-full h-120 object-fill"
+            className="w-full h-120 object-cover"
           />
         </div>
 
         {/* Text content with icons */}
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 items-baseline">
           {/* Feature 1 */}
           <div className="flex items-start gap-4">
             <img src={streamIcon} alt="Interactive Live Streams Icon" className="w-10 h-10 mt-1" />
