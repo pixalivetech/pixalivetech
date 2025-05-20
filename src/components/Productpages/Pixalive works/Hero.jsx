@@ -15,25 +15,24 @@ const Hero = () => {
 
     return (
         <section className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
-            <div className="max-w-7xl mx-auto">
+            <div className=" mx-auto">
                 {/* Heading */}
-                <h1 className="font-lufga font-normal text-[26px] leading-[130%] sm:text-[32px] sm:leading-[140%] md:text-[40px] md:leading-[150%] lg:text-[52px] lg:leading-[160%] tracking-tight mb-10">
-                    An innovative partnership delivering high-performance live streaming, IT infrastructure,
-                    and scalable digital solutions tailored for modern businesses.
+                <h1 className="font-lufga font-normal text-[26px] leading-[130%] sm:text-[32px] sm:leading-[140%] md:text-[40px] md:leading-[150%] lg:text-[52px] lg:leading-[160%] tracking-tight mb-10 text-left">
+                    Pixalive Grow — Your All-in-One <br /> Business Tool
                 </h1>
 
-                {/* Paragraphs */}
-                <div className="grid gap-6 sm:gap-8 md:grid-cols-3 mt-8 sm:text-[15px] md:text-base">
-                    <div className="hidden md:block" /> {/* Empty column for spacing */}
-
-                    <p className="font-normal text-[18px] leading-[170%] tracking-normal">
-                        Pixalive Technology Services specializes in building scalable software solutions,
-                        cloud systems, and enterprise-grade platforms that empower digital transformation.
-                    </p>
-
-                    <p className="font-normal text-[18px] leading-[170%] tracking-normal">
-                        {/* This paragraph is intentionally left empty */}
-                    </p>
+                {/* Right-aligned Paragraph Section */}
+                <div className="flex flex-col md:flex-row md:justify-end gap-6 md:gap-12">
+                    <div className="max-w-md">
+                        <p className="font-normal text-[18px] leading-[170%] tracking-normal">
+                            Pixalive Grow is a powerful business suite developed under Pixalive Technology Services Pvt. Ltd. It brings together CRM, sales automation, client management, invoicing, campaigns, and analytics — all in one intuitive platform.
+                        </p>
+                    </div>
+                    <div className="max-w-md">
+                        <p className="font-normal text-[18px] leading-[170%] tracking-normal">
+                            Whether you're a freelancer, startup founder, or business owner, Pixalive Grow gives you the tools to build, market, and manage your business with ease.
+                        </p>
+                    </div>
                 </div>
 
                 {/* Button - Always Centered */}
@@ -46,7 +45,7 @@ const Hero = () => {
                     </button>
                 </div>
 
-                {/* Image - Medium Width */}
+                {/* Image */}
                 <div className="mt-10 flex justify-center">
                     <img
                         className="w-full h-auto sm:h-[350px] md:h-[500px] lg:h-[600px] sm:max-w-[1360px] object-cover"

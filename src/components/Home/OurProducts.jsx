@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -16,40 +17,49 @@ const products = [
         title: "Live Shopping",
         description: "Boost conversions with live shopping—blend real-time product",
         image: product1,
+        path: "/products/live-shopping",
     },
     {
         title: "Live Edutainment",
         description: "Make learning fun and interactive with live trivia, polls, and quizzes.",
         image: product2,
+        path: "/products/live-edutainment",
     },
     {
         title: "Pixalive Grow",
         description: "Pixalive Grow helps you easily build, market, and manage your business.",
         image: product3,
+        path: "/products/pixalive-work",
     },
     {
         title: "Interactive Webinars",
         description: "Host engaging webinars to connect with your audience.",
         image: product4,
+        path: "/products/interactive-branching",
     },
     {
         title: "Interactive Shoppable",
         description: "Enhance your customers’ shopping journey with interactive shoppable videos.",
         image: product5,
+        path: "/products/interactive-videos",
     },
     {
         title: "Social  Live  Streaming",
         description: "Make live streams more engaging with real-time features",
         image: product6,
+        path: "/products/live-streaming",
     },
     {
         title: "Pixalive Commerce",
         description: "Launch your own multi-vendor marketplace with Pixalive’s powerful mobile app",
         image: product7,
+        path: "/products/pixalive-work", // or a separate route if applicable
     },
 ];
 
 const OurProducts = () => {
+    const navigate = useNavigate();
+
     return (
         <section className="py-12 px-4 sm:px-6 lg:px-12 bg-white h-[512px] max-w-[1280px] mx-auto mb-6">
             <div className="max-w-7xl mx-auto">
@@ -74,8 +84,9 @@ const OurProducts = () => {
                     {products.map((product, index) => (
                         <SwiperSlide key={index}>
                             <div
+                                onClick={() => navigate(product.path)}
                                 className="bg-white mt-6 cursor-pointer overflow-hidden border border-gray-300 p-3 hover:shadow-lg transition-shadow duration-300"
-                                style={{ height: '350px' }} // Fix the height here (adjust as needed)
+                                style={{ height: '350px' }}
                             >
                                 <img
                                     src={product.image}
@@ -84,7 +95,6 @@ const OurProducts = () => {
                                     loading="lazy"
                                 />
                                 <div className="p-4 overflow-hidden" style={{ height: 'calc(350px - 192px)' }}>
-                                    {/* 192px is approx image height + padding, adjust as needed */}
                                     <h3 className="text-lg font-normal text-black truncate">
                                         {product.title}
                                     </h3>
@@ -94,7 +104,6 @@ const OurProducts = () => {
                                 </div>
                             </div>
                         </SwiperSlide>
-
                     ))}
                 </Swiper>
             </div>
