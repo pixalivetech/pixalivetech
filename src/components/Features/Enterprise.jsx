@@ -59,31 +59,18 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section className=" py-20 px-4  max-w-[1280px] mx-auto sm:px-6 lg:px-10 text-black">
+    <section className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       <div className="max-w-[1280px] mx-auto">
-        {/* Title */}
-        <h2 className="text-[30px] sm:text-[36px] md:text-[44px] font-normal leading-[120%] tracking-tight mb-14">
-          Core Features for Enterprise-
-          <br className="hidden sm:block" />
+        <h2 className="text-[24px] sm:text-[32px] md:text-[40px] lg:text-[44px] font-semibold leading-[130%] tracking-tight mb-10 sm:mb-12 md:mb-14 text-center sm:text-left">
+          Core Features for Enterprise-<br className="hidden sm:block" />
           Level Live Streaming
         </h2>
-
-        {/* Feature Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="border border-gray-200  p-8  hover:shadow-md transition-shadow"
-            >
-              <img
-                src={feature.icon}
-                alt={feature.title}
-                className="w-[48px] h-[48px] mb-5"
-              />
-              <h3 className="text-[18px] font-normal mb-3">{feature.title}</h3>
-              <p className="text-[15px] leading-[1.7] text-gray-700">
-                {feature.description}
-              </p>
+            <div key={index} className="border border-gray-200 p-6 sm:p-7 md:p-8 rounded-xl hover:shadow-md transition-shadow bg-white">
+              <img src={feature.icon} alt={feature.title} className="w-[40px] sm:w-[44px] md:w-[48px] h-auto mb-4 sm:mb-5" />
+              <h3 className="text-[16px] sm:text-[17px] md:text-[18px] font-semibold mb-2 sm:mb-3">{feature.title}</h3>
+              <p className="text-[14px] sm:text-[15px] leading-[1.7] text-gray-700">{feature.description}</p>
             </div>
           ))}
         </div>

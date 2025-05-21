@@ -53,7 +53,7 @@ const products = [
         title: "Pixalive Commerce",
         description: "Launch your own multi-vendor marketplace with Pixalive’s powerful mobile app",
         image: product7,
-        path: "/products/pixalive-work", // or a separate route if applicable
+        path: "/products/pixalive-commerce", // or a separate route if applicable
     },
 ];
 
