@@ -14,6 +14,7 @@ const MobileCommerceSection = () => {
             src={Image}
             alt="Mobile Commerce UI"
             className="max-w-full h-auto  object-contain"
+            loading='lazy'
           />
         </div>
 
@@ -61,7 +62,7 @@ const MobileCommerceSection = () => {
             {/* CTA */}
       <div className="flex justify-center md:mt-15 mt-2 ">
               
-        <button className="bg-[#000000] text-[#FFFFFF] px-6 py-3 mb-4 md:text-lg text-md font-lufga flex items-center gap-2 hover:bg-gray-900 transition">
+        <button className="bg-[#000000] text-[#FFFFFF] cursor-pointer px-6 py-3 mb-4 md:text-lg text-md font-lufga flex items-center gap-2 hover:bg-gray-900 transition">
         Get in Touch <ArrowRight className="w-4 h-4" />
         </button>
       </div>

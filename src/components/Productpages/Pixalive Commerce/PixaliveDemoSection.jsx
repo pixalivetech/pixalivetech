@@ -32,20 +32,20 @@ const PixaliveDemoSection = () => {
         {/* Toggle buttons */}
         <div className="bg-[#D1D1D1] md:text-lg text-sm font-semibold py-2   md:w-105 w-85 ml-2 md:ml-100 flex justify-center gap-4">
           <button
-            className={`px-6 py-2  ${
+            className={`px-6 py-2 cursor-pointer  ${
               activeTab === 'pixalive'
-                ? 'bg-[#000000] text-[#FFFFFF]'
-                : 'bg-[#D1D1D1] text-[#3E3E3E]'
+                ? 'bg-[#000000] text-[#FFFFFF] cursor-pointer'
+                : 'bg-[#D1D1D1] text-[#3E3E3E] cursor-pointer'
             }`}
             onClick={() => setActiveTab('pixalive')}
           >
             Pixalive Demo
           </button>
           <button
-            className={`px-6 py-2  ${
+            className={`px-6 py-2 cursor-pointer ${
               activeTab === 'b2b'
-                ? 'bg-[#000000] text-[#FFFFFF]'
-                : 'bg-[#D1D1D1] text-[#3E3E3E]'
+                ? 'bg-[#000000] text-[#FFFFFF] cursor-pointer'
+                : 'bg-[#D1D1D1] text-[#3E3E3E] cursor-pointer'
             }`}
             onClick={() => setActiveTab('b2b')}
           >
@@ -72,6 +72,7 @@ const PixaliveDemoSection = () => {
                 src={demo.image}
                 alt={demo.title}
                 className="w-full h-full object-cover"
+                loading='lazy'
                 />
                 <div className="absolute bottom-0 right-18 w-full bg-[#000000] bg-opacity-80 text-[#FFFFFF] px-4 py-2 text-lg">
                 {demo.title}

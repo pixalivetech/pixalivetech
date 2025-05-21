@@ -16,7 +16,7 @@ const HeroSection = () => {
           Launch, manage, and scale your B2B & B2C business with India’s most connected commerce ecosystem — from online storefronts to franchise retail, logistics to billing — all powered by Pixalive.
         </p>
         <div className="flex justify-center md:mt-10 mt-2 lg:justify-start">
-          <button className="bg-[#000000] text-[#FFFFFF] px-6 py-3  text-md font-medium flex items-center gap-2 hover:bg-gray-900 transition">
+          <button className="bg-[#000000] cursor-pointer text-[#FFFFFF] px-6 py-3  text-md font-medium flex items-center gap-2 hover:bg-gray-900 transition">
             Book a Demo <ArrowRight className="w-4 h-4" />
           </button>
         </div>
@@ -28,6 +28,7 @@ const HeroSection = () => {
           src={heroImg}
           alt="Hero section illustration"
           className="max-w-full h-auto"
+          loading='lazy'
         />
       </div>
      

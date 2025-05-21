@@ -7,7 +7,7 @@ import chaimug from '../../assets/imgs/services/chaimug.png';
 
 const CaseStudies = () => {
   return (
-    <section className="px-6 md:px-16 py-16 text-black max-w-[1200px] mx-auto">
+    <section className="px-4 md:px-10 py-16 text-black max-w-[1280px] mx-auto">
       <h2 className="text-4xl font-normal mb-10">
            Case Studies<sup className="text-xs align-top">(04)</sup>
       </h2>

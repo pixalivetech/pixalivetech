@@ -1,4 +1,4 @@
-// ScrollToTop.jsx
+// components/ScrollToTop.jsx
 import React, { useState, useEffect } from 'react';
 
 const ScrollToTop = () => {
@@ -8,7 +8,10 @@ const ScrollToTop = () => {
     const toggleVisibility = () => {
       setVisible(window.scrollY > 300);
     };
+
+    toggleVisibility(); // ✅ Check on initial render
     window.addEventListener('scroll', toggleVisibility);
+
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
@@ -21,7 +24,7 @@ const ScrollToTop = () => {
       <button
         onClick={scrollToTop}
         aria-label="Scroll to top"
-        title="Scroll to top" // ✅ Tooltip added here
+        title="Scroll to top"
         style={{
           position: 'fixed',
           bottom: '30px',

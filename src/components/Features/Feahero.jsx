@@ -23,13 +23,13 @@ const Hero = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <button onClick={handleBookDemo} className="bg-black text-white px-6 py-3 rounded-md text-base font-medium hover:opacity-90 transition duration-200 cursor-pointer">
+          <button onClick={handleBookDemo} className="bg-black text-white px-6 py-3  text-base font-medium hover:opacity-90 transition duration-200 cursor-pointer">
             Book Live Demo →
           </button>
         </div>
 
         <div className="mt-20 flex justify-center">
-          <img className="w-full sm:max-w-[1360px] h-[700px] rounded-[19px]" src={hero} alt="hero img" />
+          <img className="w-full sm:max-w-[1360px] h-[700px]" src={hero} alt="hero img" />
         </div>
       </div>
     </section>

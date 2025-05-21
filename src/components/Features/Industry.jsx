@@ -54,7 +54,7 @@ const IndustrySection = () => {
   return (
     <section className="px-4 sm:px-6 lg:px-20 text-black bg-white ">
       <div className="max-w-[1280px] mx-auto ">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 sm:mb-16 leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal mb-10 sm:mb-16 leading-tight">
           Built for the Demands of <br className="hidden sm:block" /> Your Industry
         </h2>
 

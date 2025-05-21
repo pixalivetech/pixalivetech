@@ -4,9 +4,9 @@ import service2 from "../../assets/imgs/services/service2.png";
 
 const ServiceCards = () => {
   return (
-    <div className="px-4 sm:px-6 md:px-8 mt-2 py-8 max-w-[1200px] mx-auto">
+    <div className="px-4 sm:px-6 md:px-8 mt-2 py-8 max-w-[1280px] mx-auto">
       {/* Services Heading */}
-      <h1 className="text-3xl font-semibold mb-8">Services</h1>
+      <h1 className="text-3xl font-normal mb-8">Services</h1>
 
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Card 1 - End to End Development */}

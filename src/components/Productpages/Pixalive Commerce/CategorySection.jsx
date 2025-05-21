@@ -91,11 +91,12 @@ const CategorySection = () => {
           <div key={idx} className="group [perspective:1000px] relative h-64">
             <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl">
               {/* Front Side */}
-              <div className="absolute w-full h-full [backface-visibility:hidden]">
+              <div className="absolute w-full h-full [backface-visibility:hidden] cursor-pointer">
                 <img
                   src={cat.image}
                   alt={cat.title}
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover "
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/40 text-white  flex items-center justify-center text-2xl font-semibold">
                   {cat.title}
@@ -103,7 +104,7 @@ const CategorySection = () => {
               </div>
 
               {/* Back Side */}
-              <div className="absolute w-full h-full bg-white text-black rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center px-6 py-4 text-center overflow-y-auto">
+              <div className="absolute w-full h-full text-black rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center px-6 py-4 text-center overflow-y-auto">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">{cat.title}</h3>
                 <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   {cat.description}
@@ -124,7 +125,7 @@ const CategorySection = () => {
       {/* CTA */}
        <div className="flex justify-center md:mt-15 mt-2 ">
         
-          <button className="bg-[#000000] text-[#FFFFFF] px-6 py-3 md:text-lg text-md font-lufga   flex items-center gap-2 hover:bg-gray-900 transition">
+          <button className="bg-[#000000] text-[#FFFFFF] cursor-pointer px-6 py-3 md:text-lg text-md font-lufga   flex items-center gap-2 hover:bg-gray-900 transition">
           Get Started <ArrowRight className="w-4 h-4" />
           </button>
         </div>

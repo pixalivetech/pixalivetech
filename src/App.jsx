@@ -14,16 +14,17 @@ import Interactivevideos from "./pages/Interactivevideos";
 import Livestreaming from "./pages/Livestreaming";
 import Liveshopping from "./pages/Liveshopping";
 import Liveedutainment from "./pages/Liveedutainment";
-import ScrollToTop from "./components/ScrollToTop";
 import Pixaliveworks from "./pages/Pixaliveworks";
 import PixaliveCommerceSection from "./pages/Pixalivecommerce";
+import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
 
 function App() {
   return (
     <>
-      
       <Header />
-      <ScrollToTop />
+      <ScrollToTopOnRouteChange /> {/* ✅ Ensures top scroll on route change and refresh */}
+      <ScrollToTop /> {/* ✅ Button appears after scroll */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -31,19 +32,18 @@ function App() {
         <Route path="/hireus" element={<HireUs />} />
         <Route path="/service" element={<Services />} />
         <Route path="/pricing" element={<Pricing />} />
-        <Route path="features" element={<Features />} />
+        <Route path="/features" element={<Features />} />
         <Route path="/products/interactive-videos" element={<ShoppableVideos />} />
         <Route path="/products/interactive-branching" element={<Interactivevideos />} />
         <Route path="/products/live-streaming" element={<Livestreaming />} />
         <Route path="/products/live-shopping" element={<Liveshopping />} />
         <Route path="/products/live-edutainment" element={<Liveedutainment />} />
-        <Route path="/products/pixalive-work" element={<Pixaliveworks/>} />
-        <Route path="/products/pixalive-commerce" element={<PixaliveCommerceSection/>} />
-
-
+        <Route path="/products/pixalive-work" element={<Pixaliveworks />} />
+        <Route path="/products/pixalive-commerce" element={<PixaliveCommerceSection />} />
       </Routes>
       <Footer />
     </>
   );
 }
+
 export default App;

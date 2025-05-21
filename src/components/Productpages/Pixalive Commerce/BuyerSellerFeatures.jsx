@@ -90,8 +90,8 @@ const BuyerSellerFeatures = () => {
               setActiveTab('seller');
               setOpenIndex(null);
             }}
-            className={`px-6 py-2 font-lufga   ${
-              activeTab === 'seller' ? 'bg-[#000000] text-[#FFFFFF]' : 'bg-[#D1D1D1] text-[#3E3E3E]'
+            className={`px-6 py-2 font-lufga cursor-pointer   ${
+              activeTab === 'seller' ? 'bg-[#000000] text-[#FFFFFF] cursor-pointer' : 'cursor-pointer bg-[#D1D1D1] text-[#3E3E3E]'
             }`}
           >
             Seller Features
@@ -124,6 +124,7 @@ const BuyerSellerFeatures = () => {
               src={imageToShow}
               alt={`${activeTab} features`}
               className="max-w-full h-auto object-contain"
+              loading='lazy'
             />
           </div>
         </div>
