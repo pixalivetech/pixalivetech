@@ -76,8 +76,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto mt-12 flex flex-col mb-20 md:flex-row justify-between items-start md:items-center gap-4 text-xs text-gray-400">
         <p>© 2025 Pixalive Technology Services. All rights reserved.</p>
         <div className="flex gap-6">
-          <a href="/terms" className="hover:underline">Terms of Use</a>
-          <a href="/privacy" className="hover:underline  ">Privacy Policy</a>
+          <a href="/" className="hover:underline">Terms of Use</a>
+          <a href="/" className="hover:underline  ">Privacy Policy</a>
         </div>
       </div>
 

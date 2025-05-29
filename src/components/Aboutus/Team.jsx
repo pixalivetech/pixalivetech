@@ -18,22 +18,18 @@ const team = [
   { name: "Satishkumar", role: "Chief Product Officer", image: Satishkumar, alt: "Satishkumar" },
   null,
   { name: "Murugan", role: "Lead Product Engineer", image: Murugan, alt: "Murugan" },
-
   null,
   { name: "Mohan", role: "Senior Backend Developer", image: Mohan, alt: "Mohan" },
   { name: "Sivakumar", role: "Senior Full Stack Developer", image: Sivakumar, alt: "Sivakumar" },
   { name: "Pavan Kumar B", role: "Senior Backend Developer", image: PavanKumar, alt: "Pavankumar" },
-
   { name: "Vijay K", role: "Front end Developer", image: Vijay, alt: "Vijay" },
   null,
   { name: "Somanathan", role: "UI/UX Designer", image: Somanathan, alt: "Somanathan" },
   { name: "Kesavan", role: "UI/UX Designer", image: Kesavan, alt: "Kesavan" },
-
   { name: "Kathirvel", role: "Software Developer", image: Kathirvel, alt: "Kathirvel" },
   { name: "Dhivinkumar", role: "Software Developer", image: Dhivinkumar, alt: "Dhivinkumar" },
   { name: "Mayakannan", role: "Software Developer", image: Mayakannan, alt: "Mayakannan" },
   null,
-
   { name: "Bharath Kumar", role: "Software Developer", image: BharathKumar, alt: "Bharath Kumar" },
   { name: "Kaaviyan", role: "Senior Backend Developer", image: Kaaviyan, alt: "Kaaviyan" },
   null,
@@ -42,15 +38,22 @@ const team = [
 
 const TeamSection = () => {
   return (
-    <div className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
-      <h2 className="text-2xl md:text-3xl font-normal mb-12">Teams</h2>
+    <div className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+      {/* Top Section: "Our Team" + Description */}
+      <div className="flex flex-col md:flex-row justify-between items-start mb-16">
+        <h4 className="text-sm text-gray-500 mb-4 md:mb-0">Our Team</h4>
+        <p className="text-3xl font-semibold text-black md:max-w-3xl text-left">
+          We’re a diverse team of 30+ developers, designers, and thinkers building meaningful digital experiences together.
+        </p>
+      </div>
 
+      {/* Team Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
         {team.map((member, index) => (
           <div key={index} className="w-full flex flex-col items-center">
             {member ? (
               <>
-                <div className="w-40 h-52 bg-gray-300  mb-3 overflow-hidden flex items-center justify-center">
+                <div className="w-40 h-52 bg-gray-300 mb-3 overflow-hidden flex items-center justify-center shadow">
                   {member.image ? (
                     <img
                       src={member.image}
@@ -64,7 +67,7 @@ const TeamSection = () => {
                 </div>
                 {member.name && (
                   <>
-                    <p className="text-[black] text-[16px] font-medium text-center">{member.name}</p>
+                    <p className="text-black text-[16px] font-medium text-center">{member.name}</p>
                     <p className="text-[14px] text-[#5D5D5D] text-center">{member.role}</p>
                   </>
                 )}
@@ -76,17 +79,31 @@ const TeamSection = () => {
         ))}
       </div>
 
-      <div className="mt-20 flex justify-center">
+      {/* Replacing the CTA Section with image text */}
+      {/* New CTA Section - matching your image layout */}
+<div className="mt-20 grid grid-cols-1 md:grid-cols-5 items-start gap-4">
+  {/* Left side: small label */}
+  <div className="md:col-span-1">
+    <p className="text-sm font-medium text-gray-800">Join Our Team</p>
+  </div>
 
-        <a
-          href="/contact"
-          className="text-4xl  font-bold text-black underline underline-offset-4"
-        >
-          Join Our Team
-        </a>
-      </div>
+  {/* Right side: main message */}
+  <div className="md:col-span-4">
+    <p className="text-3xl sm:text-4xl font-semibold text-black mb-6 leading-snug">
+      Be part of a fast-growing tech company where ideas turn into impact. Let’s build the future, together.
+    </p>
+    <a
+      href="/contact"
+      className="text-lg font-medium text-black underline underline-offset-4  transition"
+    >
+      Be a Part of Our Team ↗
+    </a>
+  </div>
+</div>
+
     </div>
   );
 };
 
 export default TeamSection;
+
