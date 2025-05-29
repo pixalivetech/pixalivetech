@@ -47,9 +47,11 @@ const Header = () => {
     };
   }, [menuOpen]);
 
+  const isWhitePath = ['/', '/features', '/hireus', '/aboutus'].includes(location.pathname);
+
   return (
     <>
-      <div className="max-w-[1280px] p-2 mx-auto w-full sm:px-6 lg:px-12 py-4 flex justify-between items-center border-b md:border-b-0">
+      <div className="max-w-[1280px] p-2 mx-auto w-full sm:px-6 lg:px-12 py-4 flex justify-between items-center  md:border-b-0">
         {/* Logo */}
         <div className="flex-shrink-0 bg-black p-2 cursor-pointer">
           <Link to="/">
@@ -89,8 +91,6 @@ const Header = () => {
                     </Link>
                   ))}
                 </div>
-
-
               </div>
             ) : (
               <Link
@@ -112,19 +112,20 @@ const Header = () => {
               ? 'text-white'
               : 'text-black'
               } ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
-
           >
             Lets talk ↗
           </Link>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* ✅ Mobile Menu Toggle (Updated Here) */}
         <button
           className="md:hidden px-4 z-50"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} className='text-white' />}
+          {menuOpen
+            ? <X size={24} className={isWhitePath ? 'text-white' : 'text-black'} />
+            : <Menu size={24} className={isWhitePath ? 'text-white' : 'text-black'} />}
         </button>
       </div>
 
@@ -220,3 +221,4 @@ const Header = () => {
 };
 
 export default Header;
+  
