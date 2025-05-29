@@ -1,5 +1,4 @@
 import React from 'react'
-import HeroSection from '../components/Hireus/Herosection'
 import ProjectSection from '../components/Hireus/Projectsection'
 import ProductLifeCycle from '../components/Hireus/Productlifecycle'
 import CardSlider from '../components/Hireus/Cardslider'
@@ -16,7 +15,6 @@ const HireUs = () => {
   return (
     <div>
       <NewHero />
-      <HeroSection />
       <ProjectSection />
       <ProductLifeCycle />
       <CardSlider />
