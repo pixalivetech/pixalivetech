@@ -5,9 +5,11 @@ import Advantage from './../components/Productpages/Live Edutainment/Advantage'
 import Commerce from './../components/Productpages/Live Edutainment/Commerce'
 import Faq from '../components/Hireus/Faq1.jsx'
 import Launching from './../components/Productpages/Live Edutainment/Launching.jsx'
+import Header from '../components/Header/Header.jsx'
 const Liveedutainment = () => {
   return (
     <div>
+      <Header />
       <Hero/>
       <Immersive/>
       <Advantage/>

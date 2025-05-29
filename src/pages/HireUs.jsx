@@ -9,22 +9,24 @@ import MethodologySection from '../components/Hireus/Methodology'
 import Stages from '../components/Hireus/Stages'
 import TestimonialsTabs from '../components/Home/TestimonialsTabs'
 import Faq1 from '../components/Hireus/Faq1'
+import NewHero from '../components/NewHero'
 
 
 const HireUs = () => {
   return (
     <div>
-        <HeroSection />
-        <ProjectSection />
-        <ProductLifeCycle />
-        <CardSlider />
-        <ToolsCard />
-        <Industries />
-        <MethodologySection />
-        <Stages />
-        <TestimonialsTabs />
-        <Faq1 />
-        
+      <NewHero />
+      <HeroSection />
+      <ProjectSection />
+      <ProductLifeCycle />
+      <CardSlider />
+      <ToolsCard />
+      <Industries />
+      <MethodologySection />
+      <Stages />
+      <TestimonialsTabs />
+      <Faq1 />
+
     </div>
   )
 }

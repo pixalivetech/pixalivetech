@@ -5,10 +5,12 @@ import Advantage from '../components/Productpages/Interactive videos/Advantage'
 import Faq from '../components/Hireus/Faq1'
 import Launching from './../components/Productpages/Interactive videos/Launching'
 import Commerce from './../components/Productpages/Interactive videos/Commerce'
+import Header from '../components/Header/Header'
 
 const Interactivevideos = () => {
   return (
     <div>
+      <Header />
       <Hero/>
       <Immersive/>
       <Advantage/>
