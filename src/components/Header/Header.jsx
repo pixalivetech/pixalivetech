@@ -108,14 +108,18 @@ const Header = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className={`inline-flex items-center text-[18px] font-medium hover:opacity-80 border-black ${['/', '/features', '/hireus', '/aboutus'].includes(location.pathname)
+            className={`inline-flex items-center text-[18px] font-medium hover:opacity-80 border-black group transition-colors ${['/', '/features', '/hireus', '/aboutus'].includes(location.pathname)
               ? 'text-white'
               : 'text-black'
               } ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
           >
-            Lets talk ↗
+            Let's talk
+            <span className="ml-1 inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+              ↗
+            </span>
           </Link>
         </div>
+
 
         {/* ✅ Mobile Menu Toggle (Updated Here) */}
         <button
@@ -144,13 +148,13 @@ const Header = () => {
       >
         <div className="relative flex flex-col px-6 pt-20 gap-4 text-base font-medium">
           {/* Close Icon */}
-          <button
+          {/* <button
             className="absolute top-4 right-4"
             onClick={() => setMenuOpen(false)}
             aria-label="Close menu"
           >
-            <X size={24} />
-          </button>
+            <X size={34} />
+          </button> */}
 
           {navItems.map((item) =>
             item.submenu ? (
@@ -200,14 +204,19 @@ const Header = () => {
 
           <Link
             to="/contact"
-            className={`inline-flex items-center ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
+            className={`inline-flex items-center group transition-colors ${isActive('/contact') ? 'underline underline-offset-4' : ''
+              }`}
             onClick={() => {
               setMenuOpen(false);
               setMobileSubmenuOpen(false);
             }}
           >
-            Lets talk <span className="ml-1">↗</span>
+            Let’s talk
+            <span className="ml-1 inline-block transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+              ↗
+            </span>
           </Link>
+
 
           <div className="mt-12 flex">
             <div className="font-medium text-5xl sm:text-6xl md:text-[100px] bg-gradient-to-b from-black to-white bg-clip-text text-transparent text-center">
@@ -221,4 +230,3 @@ const Header = () => {
 };
 
 export default Header;
-  
