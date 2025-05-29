@@ -1,4 +1,4 @@
-// App.jsx
+
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
@@ -22,9 +22,9 @@ import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
 function App() {
   return (
     <>
-      <Header />
-      <ScrollToTopOnRouteChange /> {/* ✅ Ensures top scroll on route change and refresh */}
-      <ScrollToTop /> {/* ✅ Button appears after scroll */}
+      {/* <Header /> */}
+      <ScrollToTopOnRouteChange /> {/* top scroll on route change and refresh */}
+      <ScrollToTop /> {/* Button appears after scroll */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />

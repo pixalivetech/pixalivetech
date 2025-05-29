@@ -8,10 +8,12 @@ import BuyerSellerFeatures from '../components/Productpages/Pixalive Commerce/Bu
 import MobileCommerceSection from '../components/Productpages/Pixalive Commerce/MobileCommerceSection'
 import PixaliveDemoSection from '../components/Productpages/Pixalive Commerce/PixaliveDemoSection'
 import Faq from '../components/Hireus/Faq1'
+import Header from '../components/Header/Header'
 
 const Pixalivecommerce = () => {
   return (
     <div>
+      <Header />
       <Hero1 />
       <TopRatedSection />
       <CommerceSection />

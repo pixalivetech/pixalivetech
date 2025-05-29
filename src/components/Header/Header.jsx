@@ -62,7 +62,12 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-8 font-lufga font-medium text-[18px] leading-[130%] relative">
+        <nav
+          className={`hidden md:flex space-x-8 font-lufga font-medium text-[18px] leading-[130%] relative ${['/', '/features', '/hireus', '/aboutus'].includes(location.pathname)
+            ? 'text-white'
+            : 'text-black'
+            }`}
+        >
           {navItems.map((item) =>
             item.submenu ? (
               <div className="relative group" key={item.label}>
@@ -72,17 +77,20 @@ const Header = () => {
                   {item.label}
                   <ChevronDown className="transition-transform duration-200 group-hover:rotate-180" size={16} />
                 </span>
-                <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-200 z-50">
+                <div className="absolute left-0 mt-2 w-56 bg-black text-white shadow-lg opacity-0 
+                group-hover:opacity-90 invisible group-hover:visible transition duration-200 z-50">
                   {item.submenu.map((subItem) => (
                     <Link
                       key={subItem.path}
                       to={subItem.path}
-                      className="block px-4 py-2 hover:bg-gray-200"
+                      className="block px-4 py-2 hover:text-gray-300 hover:scale-105 transform transition-all duration-200"
                     >
                       {subItem.label}
                     </Link>
                   ))}
                 </div>
+
+
               </div>
             ) : (
               <Link
@@ -100,7 +108,11 @@ const Header = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className={`inline-flex items-center text-[18px] font-medium border-black hover:opacity-80 ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
+            className={`inline-flex items-center text-[18px] font-medium hover:opacity-80 border-black ${['/', '/features', '/hireus', '/aboutus'].includes(location.pathname)
+              ? 'text-white'
+              : 'text-black'
+              } ${isActive('/contact') ? 'underline underline-offset-4' : ''}`}
+
           >
             Lets talk ↗
           </Link>
@@ -112,7 +124,7 @@ const Header = () => {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          {menuOpen ? <X size={24} /> : <Menu size={24} className='text-white' />}
         </button>
       </div>
 
@@ -126,9 +138,8 @@ const Header = () => {
 
       {/* Mobile Sidebar Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-[80%] max-w-xs bg-white text-black z-50 transform transition-transform duration-300 ease-in-out ${
-          menuOpen ? 'translate-x-0' : '-translate-x-full'
-        } md:hidden`}
+        className={`fixed top-0 left-0 h-full w-[80%] max-w-xs bg-white text-black z-50 transform transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : '-translate-x-full'
+          } md:hidden`}
       >
         <div className="relative flex flex-col px-6 pt-20 gap-4 text-base font-medium">
           {/* Close Icon */}
@@ -144,7 +155,7 @@ const Header = () => {
             item.submenu ? (
               <div key={item.label} className="relative" ref={submenuRef}>
                 <div
-                  className="hover:opacity-75 cursor-pointer flex items-center justify-between"
+                  className="hover:opacity-75  cursor-pointer flex items-center justify-between"
                   onClick={() => setMobileSubmenuOpen(!mobileSubmenuOpen)}
                 >
                   <span>{item.label}</span>

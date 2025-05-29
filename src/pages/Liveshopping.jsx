@@ -5,10 +5,12 @@ import Advantage from './../components/Productpages/Live Shopping/Advantage'
 import Commerce from './../components/Productpages/Live Shopping/Commerce'
 import Faq from '../components/Hireus/Faq1'
 import Launching from './../components/Productpages/Live Shopping/Launching'
+import Header from '../components/Header/Header'
 
 const Liveshopping = () => {
   return (
     <div>
+      <Header />
       <Hero/>
       <Immersive/>
       <Advantage/>

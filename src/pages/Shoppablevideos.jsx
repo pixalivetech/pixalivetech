@@ -5,10 +5,12 @@ import PixaliveAdvantage from '../components/Productpages/Shoppable videos/Advan
 import Commerce from '../components/Productpages/Shoppable videos/Commerce'
 import Faq from '../components/Hireus/Faq1.jsx'
 import Launching from './../components/Productpages/Shoppable videos/Launching.jsx'
+import Header from '../components/Header/Header.jsx'
 
 const Shoppablevideos = () => {
   return (
     <div>
+      <Header />
       <Hero/>
       <Immersive/>
       <PixaliveAdvantage/>

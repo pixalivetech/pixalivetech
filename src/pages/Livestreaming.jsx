@@ -5,10 +5,12 @@ import Commerce from './../components/Productpages/Live Streaming/Commerce'
 import Advantage from './../components/Productpages/Live Streaming/Advantage'
 import Faq from '../components/Hireus/Faq1.jsx'
 import Launching from './../components/Productpages/Live Streaming/Launching.jsx'
+import Header from '../components/Header/Header.jsx'
 
 const Livestreaming = () => {
   return (
     <div>
+      <Header />
       <Hero/>
       <Immersive/>
       <Advantage/>

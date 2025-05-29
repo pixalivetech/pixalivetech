@@ -5,16 +5,18 @@ import ServiceCardsThree from '../components/Services/ServiceCardsThree'
 import Serviceslastcards from '../components/Services/Serviceslastcards'
 import CaseStudies from '../components/Services/CaseStudies'
 import Faqfull from '../components/Home/Faqfull'
+import Header from '../components/Header/Header'
 
 const Services = () => {
   return (
     <div className='max-w-[1280px] mx-auto'>
-        <ServiceCards />
-        <ServiceCardstwo />
-        <ServiceCardsThree />
-        <Serviceslastcards />
-        <CaseStudies />
-        <Faqfull />
+      <Header />
+      <ServiceCards />
+      <ServiceCardstwo />
+      <ServiceCardsThree />
+      <Serviceslastcards />
+      <CaseStudies />
+      <Faqfull />
     </div>
   )
 }

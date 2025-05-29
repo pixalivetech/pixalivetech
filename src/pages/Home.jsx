@@ -11,6 +11,7 @@ import Services from '../components/Home/Services'
 import TestimonialsTabs from '../components/Home/TestimonialsTabs'
 import TeamSection from '../components/Home/TeamSection'
 import OurProducts from '../components/Home/OurProducts'
+import NewHero from '../components/NewHero';
 
 
 
@@ -21,7 +22,8 @@ const Home = () => {
   return (
     <>
       <div className='py-0'>
-        <Hero />
+        {/* <Hero /> */}
+        <NewHero />
         <WhoweAre />
         <Achievements />
         <Strategy />
