@@ -18,8 +18,9 @@ const heroContent = {
   },
   '/features': {
     image: feabg,
-    title: 'Our Services Drive Your Digital Transformation.',
-    subtitle: 'From live streaming to smart video commerce, we help you scale with innovative technology.',
+    title: 'Powering Modern Businesses with Scalable Solutions and Next-Gen Live Streaming',
+    subtitle:
+      'Pixalive Technology Services builds scalable digital solutions and, with Belive Technology, enhances user engagement through advanced live streaming and interactive tools.',
     button: 'Explore Services',
     buttonLink: '/service',
   },
@@ -27,14 +28,16 @@ const heroContent = {
     image: hirebg,
     title: 'Hire Pixalive—Where Innovation Meets Execution.',
     subtitle: 'Partner with us for expert digital solutions tailored to your vision and goals.',
-    button: 'Start a Project',
+    button: 'Book Live Demo',
     buttonLink: '/contact',
   },
   '/aboutus': {
     image: aboutbg,
-    title: 'Learn About Our Journey and Mission.',
-    subtitle: 'Discover the team, values, and vision that drive Pixalive forward.',
-    button: 'Meet the Team',
+    title:
+      'At Pixalive Technology Services, we don’t just build technology—we engineer transformation',
+    subtitle:
+      'At Pixalive Technology Services, we turn ideas into intelligent, future-ready solutions—reshaping the digital world with innovation, impact, and global ambition.',
+    button: 'Know More',
     buttonLink: '/aboutus',
   },
 };
@@ -42,34 +45,34 @@ const heroContent = {
 const NewHero = () => {
   const location = useLocation();
   const { pathname } = location;
-
   const content = heroContent[pathname] || heroContent['/'];
 
   return (
-    <section className="relative w-full h-[100vh]">
+    <section className="relative w-full h-screen min-h-[600px]">
       {/* Background Image */}
       <img
         src={content.image}
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover z-0"
+        loading='lazy'
       />
-      <div className="absolute inset-0  bg-opacity-60 z-0" />
+      {/* bg-dullness */}
+      <div className="absolute inset-0 bg-black/55 z-0" />
 
       {/* Content including Header */}
       <div className="relative z-10">
         <Header />
-
-        <div className="flex items-center justify-center h-[calc(100vh-80px)] px-6">
-          <div className="max-w-4xl text-center text-white space-y-6">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+        <div className="flex items-center justify-center px-4 sm:px-6 md:px-8 h-[calc(100vh-110px)]">
+          <div className="max-w-5xl text-center text-white space-y-6">
+            <h1 className="text-[24px] sm:text-[20px] md:text-[28px] lg:text-[40px] font-medium leading-relaxed sm:leading-relaxed lg:leading-tight px-2 sm:px-4">
               {content.title}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto">
+            <p className="text-[16px] max-w-[1200px] mt-8 sm:text-lg md:text-xl mx-auto sm:mt-6 px-2 sm:px-4">
               {content.subtitle}
             </p>
             <Link
               to={content.buttonLink}
-              className="inline-block mt-6 px-6 py-3 text-base sm:text-lg bg-white text-black rounded-full font-medium hover:bg-gray-200 transition"
+              className="inline-block mt-6 px-5 py-3 text-sm sm:text-base md:text-lg bg-white text-black font-normal hover:bg-gray-200 transition"
             >
               {content.button} →
             </Link>
