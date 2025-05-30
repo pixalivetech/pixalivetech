@@ -19,24 +19,25 @@ const CultureSection = () => {
         </p>
       </div>
 
-      {/* Image Grid Section */}
-      <div className="grid grid-cols-3 gap-4">
-        {/* Column 1 */}
-        <div className="space-y-4">
-          <img src={G1} alt="Culture 1" className="object-cover w-full h-80" loading='lazy' />
-          <img src={G2} alt="Culture 2" className=" object-cover w-full h-50"loading='lazy'/>
-        </div>
-        {/* Column 2 */}
-        <div className="space-y-4">
-          <img src={G3} alt="Culture 3" className=" object-cover w-full h-50" loading='lazy'/>
-          <img src={G4} alt="Culture 4" className=" object-cover w-full h-80" />
-        </div>
-        {/* Column 3 */}
-        <div className="space-y-4">
-          <img src={G5} alt="Culture 5" className=" object-cover w-full h-80" loading='lazy'/>
-          <img src={G6} alt="Culture 6" className="object-cover w-full h-50" loading='lazy'/>
-        </div>
-      </div>
+     {/* Image Grid Section */}
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+  {/* Column 1 */}
+  <div className="space-y-4">
+    <img src={G1} alt="Culture 1" className="object-cover w-full h-80" loading='lazy' />
+    <img src={G2} alt="Culture 2" className="object-cover w-full h-50" loading='lazy' />
+  </div>
+  {/* Column 2 */}
+  <div className="space-y-4">
+    <img src={G3} alt="Culture 3" className="object-cover w-full h-50" loading='lazy' />
+    <img src={G4} alt="Culture 4" className="object-cover w-full h-80" loading='lazy' />
+  </div>
+  {/* Column 3 */}
+  <div className="space-y-4">
+    <img src={G5} alt="Culture 5" className="object-cover w-full h-80" loading='lazy' />
+    <img src={G6} alt="Culture 6" className="object-cover w-full h-50" loading='lazy' />
+  </div>
+</div>
+
     </div>
   );
 };
