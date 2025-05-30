@@ -43,12 +43,12 @@ const TeamSection = () => {
     <div className="px-4 sm:px-6 md:px-10 py-12 sm:py-16 w-full max-w-[1280px] mx-auto text-black">
 
       {/* Top Section */}
-      <div className="grid grid-cols-12  p-10 gap-4 mb-16">
-        <div className="col-span-12 md:col-span-3">
-          <h4 className="text-sm text-gray-500">Our Team</h4>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-16 px-4 md:px-10">
+        <div className="col-span-12 md:col-span-3 flex justify-center md:justify-start">
+          <h4 className="text-sm text-gray-500 text-center md:text-left">Our Team</h4>
         </div>
         <div className="col-span-12 md:col-span-9">
-          <p className="text-3xl font-semibold text-black text-left">
+          <p className="text-2xl sm:text-3xl font-semibold text-black text-center md:text-left">
             We’re a diverse team of 30+ developers, designers, and thinkers building meaningful digital experiences together.
           </p>
         </div>
@@ -87,12 +87,12 @@ const TeamSection = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-12 p-10 md:col-span-3">
-          <p className="text-sm font-medium text-gray-800">Join Our Team</p>
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 px-4 md:px-10">
+        <div className="col-span-12 md:col-span-3 flex justify-center md:justify-start">
+          <p className="text-sm font-medium text-gray-800 text-center md:text-left">Join Our Team</p>
         </div>
-        <div className="col-span-12 md:col-span-9">
-          <p className="text-3xl sm:text-4xl font-semibold text-black mb-6 leading-snug">
+        <div className="col-span-12 md:col-span-9 text-center md:text-left">
+          <p className="text-2xl sm:text-4xl font-semibold text-black mb-6 leading-snug">
             Be part of a fast-growing tech company where ideas turn into impact. Let’s build the future, together.
           </p>
           <a
