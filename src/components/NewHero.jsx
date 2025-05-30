@@ -53,7 +53,7 @@ const NewHero = () => {
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
-      <div className="absolute inset-0 bg-black/50 z-0" />
+      <div className="absolute inset-0  bg-black/50 z-0" />
 
       {/* Content including Header */}
       <div className="relative z-10">
