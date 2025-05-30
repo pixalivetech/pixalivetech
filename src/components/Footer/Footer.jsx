@@ -81,7 +81,7 @@ const Footer = () => {
 
       {/* BIG PIXALIVE TEXT */}
       <div className="absolute bottom-0 left-0 w-full text-white justify-items-center font-extrabold text-[18vw] leading-none pointer-events-none select-none z-10">
-        <span className="block whitespace-nowrap overflow-hidden text-center md:text-left -mb-6 px-6">
+        <span className="block whitespace-nowrap  overflow-hidden text-center md:text-left -mb-4 px-6">
           Pixalive
         </span>
       </div>
