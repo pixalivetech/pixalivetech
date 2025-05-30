@@ -19,7 +19,7 @@ const Gmail = () => {
 
         <button
           onClick={() => navigate('/contact')}
-          className="group inline-flex items-center gap-2 text-base font-medium border-b border-black "
+          className="group inline-flex cursor-pointer items-center gap-2 text-base font-medium border-b border-black "
         >
           Contact Us
           <span className="transform transition-transform group-hover:translate-x-1">↗</span>
