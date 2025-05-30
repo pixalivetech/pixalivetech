@@ -74,7 +74,7 @@ const Footer = () => {
 
       {/* BOTTOM BAR */}
       <div className="max-w-7xl mx-auto mt-12 flex flex-col mb-20 md:flex-row justify-between items-start md:items-center gap-4 text-xs text-gray-400">
-        <p>© 2025 Pixalive Technology Services. All rights reserved.</p>
+        <p>© 2025 Pixalive Technology Services. <br />All rights reserved.</p>
         <div className="flex gap-6">
           <a href="/" className="hover:underline">Terms of Use</a>
           <a href="/" className="hover:underline  ">Privacy Policy</a>
@@ -83,7 +83,9 @@ const Footer = () => {
 
       {/* BIG PIXALIVE TEXT */}
 <div className="absolute bottom-0 left-0 w-full text-white justify-items-center font-extrabold text-[18vw] leading-none pointer-events-none select-none z-10">
-  <span className="block whitespace-nowrap overflow-hidden text-center md:text-left mt-200 px-6">Pixalive</span>
+ <span className="block whitespace-nowrap overflow-hidden text-center md:text-left mt-0 md:mt-[20px] px-6">
+  Pixalive
+</span>
 </div>
     </footer>
   );
