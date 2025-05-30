@@ -1,38 +1,34 @@
 import React from 'react';
-import * as Tooltip from '@radix-ui/react-tooltip';
+import { useNavigate } from 'react-router-dom';
 
 const Gmail = () => {
+  const navigate = useNavigate();
+
   return (
-    <Tooltip.Provider delayDuration={0}>
-      <div>
-        <div
-          className="font-lufga font-semibold text-2xl sm:text-4xl md:text-6xl justify-center text-center leading-[130%] tracking-normal decoration-solid decoration-0 sm:p-8 md:p-10 md:min-h-[250px] mb-5 sm:mb-0"
+    <div className="max-w[1280px] flex flex-col md:flex-row items-start justify-between px-6 md:px-20 py-12  min-h-[300px]">
+      <p className="text-sm text-gray-700 mb-4 md:mb-0">
+        Ready to Connect With Pixalive?
+      </p>
+
+      <div className="max-w-2xl">
+        <h2 className="font-lufga font-semibold text-xl sm:text-2xl md:text-3xl leading-relaxed text-black mb-8">
+          Let’s turn bold ideas into powerful tech. <br />
+          Whether you're a business looking to innovate or a talent ready to create, <br />
+          we’d love to hear from you.
+        </h2>
+
+        <button
+          onClick={() => navigate('/contact')}
+          className="group inline-flex items-center gap-2 text-base font-medium border-b border-black "
         >
-          <Tooltip.Root>
-            <Tooltip.Trigger asChild>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=pixalivetech@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative cursor-pointer inline-block transition-transform duration-300 ease-in-out transform hover:scale-99"
-              >
-                pixalivetech@gmail.com
-              </a>
-            </Tooltip.Trigger>
-            <Tooltip.Portal>
-              <Tooltip.Content
-                side="bottom"
-                sideOffset={8}
-                className="bg-white text-black px-3 py-1 rounded text-sm shadow-md z-40"
-              >
-                Click me!
-                <Tooltip.Arrow className="fill-black" />
-              </Tooltip.Content>
-            </Tooltip.Portal>
-          </Tooltip.Root>
-        </div>
+          Contact Us
+          <span className="transform transition-transform group-hover:translate-x-1">↗</span>
+        </button>
       </div>
-    </Tooltip.Provider>
+
+      {/* Replace the email with your image */}
+     
+    </div>
   );
 };
 
