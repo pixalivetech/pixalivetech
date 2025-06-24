@@ -2,8 +2,8 @@ import React from 'react';
 
 const WhoweAre = () => {
     return (
-        <section className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 text-black">
-            <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-12">
+        <section className="w-full  mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 text-black">
+            <div className=" mx-auto flex flex-col lg:flex-row justify-between gap-12">
 
                 {/* Left - Section Title */}
                 <div className="w-full lg:w-[400px]">

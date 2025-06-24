@@ -26,12 +26,12 @@ const CardsHome = () => {
   ];
 
   return (
-    <div className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-1 sm:py-3">
+    <div className="p-4 w-full  mx-auto text-black sm:px-6 md:px-10 py-1 sm:py-3">
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {cards.map((card, index) => (
           <div
             key={index}
-            className="group bg-white border border-[#5D5D5D]/20 rounded-md p-6 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl cursor-pointer hover:shadow-black/20 h-[355px]"
+            className="group bg-white border border-[#5D5D5D]/20   p-6 transition-all duration-300 ease-in-out transform hover:scale-[1.02] hover:shadow-2xl cursor-pointer hover:shadow-black/20 h-[355px]"
           >
             <img
               src={card.image}

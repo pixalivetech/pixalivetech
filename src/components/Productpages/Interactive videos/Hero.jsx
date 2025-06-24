@@ -45,14 +45,14 @@ const InteractiveVideoBranching = () => {
         </div>
 
         {/* Video Section */}
-        <div className="w-full rounded overflow-hidden">
+        <div className="w-full  overflow-hidden">
           <video
             src={videoframe}
             autoPlay
             muted
             loop
             playsInline
-            className="w-auto h-auto rounded-lg"
+            className="w-auto h-auto "
           />
         </div>
       </div>

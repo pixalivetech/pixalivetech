@@ -33,7 +33,7 @@ const cardData = [
 
 const Servicelastcards = () => {
   return (
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-1 md:px-1 py-8 max-w-[1200px] mx-auto">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16">
       {cardData.map((card, index) => (
         <div
           key={index}

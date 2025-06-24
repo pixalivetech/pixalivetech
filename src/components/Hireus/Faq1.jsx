@@ -57,8 +57,8 @@ const Faq = () => {
     };
 
     return (
-            <div className=" p-2 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
-                <div className=" w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-20 py-12">
+            <div className=" p-2 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+                <div className=" w-full  mx-auto px-4 sm:px-6 lg:px-20 py-12">
                     <div className="flex flex-col max-w-[1100px] mx-auto lg:flex-row justify-between items-start lg:items-center gap-10">
                         {/* Left Section */}
                         <div className="flex-1 -translate-x-2 sm:-translate-x-4 transform">

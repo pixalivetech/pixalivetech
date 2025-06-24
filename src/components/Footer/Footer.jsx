@@ -5,7 +5,7 @@ import Logo from "../../assets/imgs/home/logo.png";
 const Footer = () => {
   return (
     <footer className="bg-black text-white px-6 md:px-16 pt-20 pb-16 md:pb-40 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         
         {/* LEFT SECTION */}
         <div className="flex flex-col gap-5">
@@ -71,7 +71,7 @@ const Footer = () => {
       </div>
 
       {/* BOTTOM BAR */}
-      <div className="max-w-7xl mx-auto mt-12 flex flex-col mb-12 md:mb-20 md:flex-row justify-between items-start md:items-center gap-4 text-xs text-gray-400">
+      <div className=" mx-auto mt-12 flex flex-col mb-12 md:mb-20 md:flex-row justify-between items-start md:items-center gap-4 text-xs text-gray-400">
         <p>© 2025 Pixalive Technology Services. <br />All rights reserved.</p>
         <div className="flex gap-6">
           <a href="/" className="hover:underline">Terms of Use</a>

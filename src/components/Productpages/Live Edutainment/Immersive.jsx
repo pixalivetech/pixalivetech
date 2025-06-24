@@ -18,7 +18,7 @@ const VideoCommerceSection = () => {
       {/* Main content grid */}
       <div className="grid md:grid-cols-2 gap-10 items-start">
         {/* Video player */}
-        <div className="w-full overflow-hidden rounded-lg">
+        <div className="w-full overflow-hidden ">
           <video
             src={videofile}
             autoPlay

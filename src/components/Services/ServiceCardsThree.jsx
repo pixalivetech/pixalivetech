@@ -4,7 +4,7 @@ import service2 from "../../assets/imgs/services/service6.png";
 
 const ServiceCardsThree = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-6 px-4 sm:px-6 md:px-8 mt-2 py-8 max-w-[1280px] mx-auto">
+    <div className="flex flex-col lg:flex-row gap-6 mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16">
       {/* Card 1 - Live Broadcast SDK */}
       <div className="w-full lg:w-[65%] border border-[#B0B0B0] p-4 flex flex-col lg:flex-row min-h-[360px]">
         {/* Video */}

@@ -8,7 +8,7 @@ import G6 from './../../assets/Aboutus/G6.jpg'
 
 const CultureSection = () => {
   return (
-    <div className="max-w-[1280px] mx-auto py-16 px-4 md:px-20">
+    <div className=" mx-auto py-16 px-4 md:px-20">
       {/* Top Text Section */}
       <div className="md:flex md:justify-between md:items-start mb-10">
         <h4 className="text-sm text-gray-500 mb-2 md:mb-0 md:mr-6">Our Culture</h4>

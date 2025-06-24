@@ -23,8 +23,8 @@ const solutions = [
 
 const AdvancedSolutions = () => {
   return (
-    <section className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
-      <div className="max-w-[1280px] mx-auto">
+    <section className=" p-4 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+      <div className=" mx-auto">
         <h2 className="text-4xl sm:text-[44px] font-normal mb-20 leading-tight">
           Advanced solutions for immersive <br className="hidden sm:block" /> live streams
         </h2>

@@ -44,7 +44,7 @@ const FeatureGrid = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="border border-gray-200 shadow-sm p-6 hover:shadow-md transition duration-200 rounded-md"
+            className="border border-gray-200 shadow-sm p-6 hover:shadow-md transition duration-200 "
           >
             <img src={icons[index]} alt={feature.title} className="w-10 h-10 mb-4" />
             <h3 className="text-lg font-medium mb-2">{feature.title}</h3>

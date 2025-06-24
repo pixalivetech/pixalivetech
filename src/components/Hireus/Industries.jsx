@@ -66,7 +66,7 @@ const services = [
 const Services = () => {
   return (
     
-    <div className=" p-4 w-full max-w-[1200px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+    <div className=" p-4 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
         <h2 className="text-3xl sm:text-3xl md:text-5xl font-lufga font-normal leading-tight">
         Industries  <br />
         Worked with 

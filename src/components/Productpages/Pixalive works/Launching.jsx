@@ -30,7 +30,7 @@ const LiveShoppingCTA = () => {
         {/* Button */}
         <button
           onClick={handleClick}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white text-sm font-medium rounded hover:bg-gray-800 transition"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white text-sm font-medium  hover:bg-gray-800 transition"
         >
           Start Your Journey
           <ArrowRight size={16} />
