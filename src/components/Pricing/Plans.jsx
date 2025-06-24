@@ -1,6 +1,6 @@
 export default function ComparePlans() {
   return (
-    <div className=" mx-auto text-black font-medium px-2 md:px-16 py-16">
+    <div className="max-w-[1280px] mx-auto text-black font-medium px-2 md:px-16 py-16">
       <h2 className="text-3xl font-semibold p-4 mb-6">Compare Plans</h2>
       <div className="overflow-x-auto">
         <table className="w-full">

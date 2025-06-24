@@ -60,7 +60,7 @@ const NewHero = () => {
         <Header />
 
         <div className="flex items-center justify-center h-[calc(100vh-80px)] px-6">
-          <div className=" text-center text-white space-y-6">
+          <div className="max-w-4xl text-center text-white space-y-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-normal leading-tight">
               {content.title}
             </h1>

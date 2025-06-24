@@ -54,7 +54,7 @@ const Achievements = () => {
   });
 
   return (
-    <div ref={ref} className="w-full  mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 text-black">
+    <div ref={ref} className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 text-black">
       <h2 className="text-base sm:text-lg md:text-xl font-medium mb-14">
         7 years in, here is what we have achieved
       </h2>

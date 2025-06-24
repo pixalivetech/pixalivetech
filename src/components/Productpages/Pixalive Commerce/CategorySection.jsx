@@ -89,7 +89,7 @@ const CategorySection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:mt-25 mt-8 md:grid-cols-3 gap-6">
         {categories.map((cat, idx) => (
           <div key={idx} className="group [perspective:1000px] relative h-64">
-            <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ">
+            <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-xl">
               {/* Front Side */}
               <div className="absolute w-full h-full [backface-visibility:hidden] cursor-pointer">
                 <img
@@ -104,7 +104,7 @@ const CategorySection = () => {
               </div>
 
               {/* Back Side */}
-              <div className="absolute w-full h-full text-black  [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center px-6 py-4 text-center overflow-y-auto">
+              <div className="absolute w-full h-full text-black rounded-xl [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center px-6 py-4 text-center overflow-y-auto">
                 <h3 className="text-2xl md:text-3xl font-bold mb-4">{cat.title}</h3>
                 <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   {cat.description}

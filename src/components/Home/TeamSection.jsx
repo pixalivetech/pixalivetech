@@ -28,12 +28,12 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section className=" p-4 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
-      <div className=" mx-auto">
+    <section className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+      <div className="max-w-[1280px] mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
           <div className="flex-1">
             <div className="text-sm pl-2 font-medium text-black mb-2">
-              Our Team
+              OUR TEAM
             </div>
           </div>
           <div className="mt-4 lg:mt-0">

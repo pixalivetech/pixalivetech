@@ -70,7 +70,7 @@ const PlansSection = () => {
   const filteredPlans = plans.filter(plan => plan.category === selectedCategory);
 
   return (
-    <section className="  mx-auto text-black font-medium px-2 md:px-16 py-16">
+    <section className=" max-w-[1280px] mx-auto text-black font-medium px-2 md:px-16 py-16">
       {/* Heading */}
       <h2 className="text-4xl mb-4 font-md">
         Choose a Plan That<br />Suits Your Needs
@@ -80,13 +80,13 @@ const PlansSection = () => {
       <div className="flex justify-center items-center space-x-2 mb-10">
         <div className="bg-gray-200 p-1 rounded">
           <button
-            className={`px-4 py-1  ${selectedCategory === 'LORA' ? 'bg-black text-white' : 'bg-gray-200 text-black'}`}
+            className={`px-4 py-1 rounded-l ${selectedCategory === 'LORA' ? 'bg-black text-white' : 'bg-gray-200 text-black'}`}
             onClick={() => setSelectedCategory('LORA')}
           >
             LORA
           </button>
           <button
-            className={`px-4 py-1 cursor-pointer  ${selectedCategory === 'ENTERPRISE' ? 'bg-black text-white' : 'bg-gray-200 text-black'}`}
+            className={`px-4 py-1 cursor-pointer rounded-r ${selectedCategory === 'ENTERPRISE' ? 'bg-black text-white' : 'bg-gray-200 text-black'}`}
             onClick={() => setSelectedCategory('ENTERPRISE')}
           >
             ENTERPRISE
@@ -102,7 +102,7 @@ const PlansSection = () => {
             className="w-full sm:w-[90%] md:w-[48%] lg:w-[30%] border border-gray-300 bg-white p-6 flex flex-col justify-between shadow-sm"
           >
             <div>
-              <div className="w-10 h-10  flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-full flex items-center justify-center mb-4">
                 <img src={tool} alt="icon" className="w-5 h-5" />
               </div>
               <h3 className="text-xl mb-1">{plan.title}</h3>

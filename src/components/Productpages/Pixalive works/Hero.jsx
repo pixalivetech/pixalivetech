@@ -39,7 +39,7 @@ const Hero = () => {
                 <div className="mt-12 flex justify-center">
                     <button
                         onClick={handleBookDemo}
-                        className="bg-black text-white px-6 py-3  text-base font-medium hover:opacity-90 transition duration-200 cursor-pointer"
+                        className="bg-black text-white px-6 py-3 rounded-md text-base font-medium hover:opacity-90 transition duration-200 cursor-pointer"
                     >
                         Book Live Demo →
                     </button>

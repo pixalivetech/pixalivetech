@@ -23,7 +23,7 @@ const features = {
 };
 
 const FeatureList = ({ items }) => (
-  <div className=" p-4 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+  <div className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
     {items.map((item, index) => (
       <p
         key={index}
@@ -53,7 +53,7 @@ const Block = ({ title, description, image, features, reverse = false }) => (
 const IndustrySection = () => {
   return (
     <section className="px-4 sm:px-6 lg:px-20 text-black bg-white ">
-      <div className=" mx-auto ">
+      <div className="max-w-[1280px] mx-auto ">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal mb-10 sm:mb-16 leading-tight">
           Built for the Demands of <br className="hidden sm:block" /> Your Industry
         </h2>

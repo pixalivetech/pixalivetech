@@ -17,7 +17,7 @@ const VideoCommerceSection = () => {
       {/* Main content grid */}
       <div className="grid md:grid-cols-2 gap-10 items-start">
         {/* Video player */}
-        <div className="w-full overflow-hidden  bg-black aspect-video flex items-center justify-center text-white text-lg">
+        <div className="w-full overflow-hidden rounded-lg bg-black aspect-video flex items-center justify-center text-white text-lg">
           {/* Placeholder if video doesn't load */}
           <video
             src={videofile}

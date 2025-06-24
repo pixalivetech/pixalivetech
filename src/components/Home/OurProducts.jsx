@@ -61,7 +61,7 @@ const OurProducts = () => {
     const navigate = useNavigate();
 
     return (
-        <section className="py-12 px-4 sm:px-6 lg:px-12 bg-white h-[512px]  mx-auto mb-6">
+        <section className="py-12 px-4 sm:px-6 lg:px-12 bg-white h-[512px] max-w-[1280px] mx-auto mb-6">
             <div className="max-w-7xl mx-auto">
                 <h4 className="text-black text-sm font-[20px]-medium mb-1">Our Products</h4>
                 <h2 className="text-3xl sm:text-4xl font-normal mt-6 text-gray-900 mb-6">

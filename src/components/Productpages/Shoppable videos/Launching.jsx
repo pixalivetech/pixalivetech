@@ -32,7 +32,7 @@ const LiveShoppingCTA = () => {
         {/* Button with scroll and navigate */}
         <button
           onClick={handleClick}
-          className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white text-sm font-medium  hover:bg-gray-800 transition"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white text-sm font-medium rounded hover:bg-gray-800 transition"
         >
           Book Live Demo
           <ArrowRight size={16} />

@@ -10,8 +10,8 @@ const Hero = () => {
   };
 
   return (
-    <section className=" p-4 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
-      <div className=" mx-auto">
+    <section className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+      <div className="max-w-[1280px] mx-auto">
         <h1 className="font-lufga font-normal text-[26px] sm:text-[32px] md:text-[40px] lg:text-[52px] leading-[160%] tracking-tight mb-10">
           An innovative partnership delivering high-performance live streaming, IT infrastructure, and scalable digital solutions tailored for modern businesses.
         </h1>
