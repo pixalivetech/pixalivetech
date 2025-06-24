@@ -5,6 +5,7 @@ import 'swiper/css';
 import rajasekar from './../../assets/imgs/home/team1.png';
 import satish from './../../assets/imgs/home/team2.png';
 import murugan from './../../assets/imgs/home/team3.png';
+import { Link } from "react-router-dom";
 
 
 const teamMembers = [
@@ -97,14 +98,14 @@ export default function TeamSection() {
 
             {/* Desktop only: Explore More */}
             <div className="flex items-center justify-center p-4 min-w-[240px]">
-              <a
-                href="/aboutus"
-                className="flex items-center justify-center text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group h-full w-full text-center"
-              >
-                Explore our Teams
-                <span className="ml-2 transform transition-transform duration-200 group-hover:translate-x-1">→</span>
-              </a>
-            </div>
+      <Link
+        to="/aboutus"
+        className="flex items-center justify-center text-sm font-medium text-gray-800 hover:text-black transition-colors duration-200 group h-full w-full text-center"
+      >
+        Explore our Teams
+        <span className="ml-2 transform transition-transform duration-200 group-hover:translate-x-1">→</span>
+      </Link>
+    </div>
           </div>
         </div>
       </div>
