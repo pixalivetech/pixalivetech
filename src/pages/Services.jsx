@@ -9,7 +9,7 @@ import Header from '../components/Header/Header'
 
 const Services = () => {
   return (
-    <div className=' mx-auto'>
+    <div className='max-w-[1280px] mx-auto'>
       <Header />
       <ServiceCards />
       <ServiceCardstwo />

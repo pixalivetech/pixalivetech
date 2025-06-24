@@ -25,7 +25,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="bg-white p-2 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+    <section className="bg-white p-2 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <h1 className="font-lufga font-normal text-[26px] leading-[130%] sm:text-[32px] sm:leading-[140%] md:text-[40px] md:leading-[150%] lg:text-[52px] lg:leading-[160%] tracking-tight mb-8">

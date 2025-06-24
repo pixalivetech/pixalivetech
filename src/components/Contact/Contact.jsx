@@ -131,7 +131,7 @@ const Contact = () => {
     };
 
     return (
-        <div className=" mx-auto px-6 sm:px-8 py-12 bg-white text-black">
+        <div className="max-w-[1280px] mx-auto px-6 sm:px-8 py-12 bg-white text-black">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center pb-10 gap-6">
                 <h2 className="text-[30px] sm:text-[40px] md:text-[60px] font-normal leading-tight">
                     GET IN TOUCH <br className="hidden sm:block" /> WITH US

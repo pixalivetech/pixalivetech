@@ -7,14 +7,14 @@ import chaimug from '../../assets/imgs/services/chaimug.png';
 
 const CaseStudies = () => {
   return (
-    <section className="mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16 text-black ">
+    <section className="px-4 md:px-10 py-16 text-black max-w-[1280px] mx-auto">
       <h2 className="text-4xl font-normal mb-10">
            Case Studies<sup className="text-xs align-top">(04)</sup>
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Featured Card */}
-        <div className="md:col-span-3  border border-gray-400 p-4">
+        <div className="md:col-span-3 max-w-128 border border-gray-400 p-4">
           <img src={pixalive} alt="Pixalive Network" className="h-40  mx-auto mb-4 loading-lazy" />
           <h3 className="text-lg font-normal mb-2">Pixalive Network</h3>
           <p className="text-sm text-black">

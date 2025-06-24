@@ -48,7 +48,7 @@ const ShoppableVideos = () => {
             muted
             loop
             playsInline
-            className="w-auto h-auto "
+            className="w-auto h-auto rounded-lg"
           />
         </div>
       </div>

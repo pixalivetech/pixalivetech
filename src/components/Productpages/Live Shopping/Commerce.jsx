@@ -46,14 +46,14 @@ const PixaliveCommerceSection = () => {
         </div>
 
         {/* Right: Video */}
-        <div className="flex-1 w-full overflow-hidden ">
+        <div className="flex-1 w-full overflow-hidden rounded-lg">
           <video
             src={videofile}
             autoPlay
             muted
             loop
             playsInline
-            className="w-full h-120 object-cover "
+            className="w-full h-120 object-cover rounded-lg"
           />
         </div>
       </div>

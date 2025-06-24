@@ -50,7 +50,7 @@ const ShoppableVideos = () => {
             muted
             loop
             playsInline
-            className="w-full h-200 object-fit "
+            className="w-full h-200 object-fit rounded-lg"
           />
         </div>
       </div>

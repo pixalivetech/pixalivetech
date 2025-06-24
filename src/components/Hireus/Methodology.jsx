@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MethodologySection() {
   return (
-    <section className=" p-4 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+    <section className=" p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
       <div className=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         {/* Left side - Label */}
         <div className="md:col-span-1">

@@ -51,14 +51,14 @@ const Header = () => {
 
   return (
     <>
-      <div className=" p-2 mx-auto w-full sm:px-6 lg:px-12 py-4 flex justify-between items-center  md:border-b-0">
+      <div className="max-w-[1280px] p-2 mx-auto w-full sm:px-6 lg:px-12 py-4 flex justify-between items-center  md:border-b-0">
         {/* Logo */}
         <div className="flex-shrink-0 bg-black p-2 cursor-pointer">
           <Link to="/">
             <img
               src={logo}
               alt="Logo"
-              className="h-8 w-8 cursor-pointer"
+              className="w-[40px] h-[40px] sm:w-[52px] sm:h-[52px] cursor-pointer"
             />
           </Link>
         </div>

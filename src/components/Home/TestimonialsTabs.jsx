@@ -40,7 +40,7 @@
     const active = testimonials[activeIndex];
 
     return (
-        <div className="p-4 w-full  mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
+        <div className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
         <div className="flex justify-between items-start flex-wrap gap-2">
             <h4 className="text-black text-sm font-[20px]-medium mb-1">What our clients say</h4>
             <h2 className="text-2xl md:text-3xl font-normal text-start w-full md:w-[700px] leading-[150%] mb-2">

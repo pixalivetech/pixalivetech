@@ -4,7 +4,7 @@ import service4 from "../../assets/imgs/services/service4.webm";
 
 const ServiceCardstwo = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-6 mx-auto px-4 sm:px-6 md:px-10 py-12 sm:py-16">
+    <div className="flex flex-col lg:flex-row gap-6 px-4 sm:px-6 md:px-8 mt-2 py-8 max-w-[1280px] mx-auto">
       {/* Card 1 - Image Card */}
       <div className="lg:w-[30%] w-full border border-[#B0B0B0] p-4 flex flex-col">
         {/* Image */}
