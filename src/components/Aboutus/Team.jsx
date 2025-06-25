@@ -11,31 +11,59 @@ import Somanathan from "./../../assets/Aboutus/somu.png";
 import Kesavan from "./../../assets/Aboutus/kesavan.png";
 import Kathirvel from "./../../assets/Aboutus/kathir.png";
 import Dhivinkumar from "./../../assets/Aboutus/dhivin.png";
-import BharathKumar from "./../../assets/Aboutus/bharath.png";
+import BharathKumar from "./../../assets/Aboutus/Bharath.png";
 import PavanKumar from "./../../assets/Aboutus/pawan.png";
 import Kaaviyan from "./../../assets/Aboutus/kaaviyan.png";
+import Gaythiri from "./../../assets/Aboutus/Gaythiri.png";
+import Surya from "./../../assets/Aboutus/Surya.png";
+import Tulasi from "./../../assets/Aboutus/Tulasi.png";
+import Shibu from "./../../assets/Aboutus/Shibu.png";
+import Raj from "./../../assets/Aboutus/Rajdurai.png";
+import Shudhakar from "./../../assets/Aboutus/Sudhakar.png";
 
 const team = [
   { name: "Rajasekar Sundaresan", role: "CEO & Founder", image: Ceo, alt: "Rajasekar Sundaresan" },
-  { name: "Satishkumar", role: "Chief Product Officer", image: Satishkumar, alt: "Satishkumar" },
   null,
+
+  { name: "Satishkumar", role: "Chief Product Officer", image: Satishkumar, alt: "Satishkumar" },
   { name: "Murugan", role: "Lead Product Engineer", image: Murugan, alt: "Murugan" },
   null,
   { name: "Mohan", role: "Senior Backend Developer", image: Mohan, alt: "Mohan" },
   { name: "Sivakumar", role: "Senior Full Stack Developer", image: Sivakumar, alt: "Sivakumar" },
-  { name: "Pavan Kumar B", role: "Senior Backend Developer", image: PavanKumar, alt: "Pavankumar" },
+  { name: "Mayakannan", role: "Software Developer", image: Mayakannan, alt: "Mayakannan" },
   { name: "Vijay K", role: "Front end Developer", image: Vijay, alt: "Vijay" },
   null,
+  { name: "Pavan Kumar B", role: "Senior Backend Developer", image: PavanKumar, alt: "Pavankumar" },
   { name: "Somanathan", role: "UI/UX Designer", image: Somanathan, alt: "Somanathan" },
   { name: "Kesavan", role: "UI/UX Designer", image: Kesavan, alt: "Kesavan" },
-  { name: "Kathirvel", role: "Software Developer", image: Kathirvel, alt: "Kathirvel" },
+   { name: "Surya", role: "UI/UX Designer", image: Surya, alt: "Sivakumar" },
+   null,
   { name: "Dhivinkumar", role: "Software Developer", image: Dhivinkumar, alt: "Dhivinkumar" },
-  { name: "Mayakannan", role: "Software Developer", image: Mayakannan, alt: "Mayakannan" },
-  null,
+   null,
+  
+  { name: "Kathirvel", role: "Software Developer", image: Kathirvel, alt: "Kathirvel" },
+ 
   { name: "Bharath Kumar", role: "Software Developer", image: BharathKumar, alt: "Bharath Kumar" },
   { name: "Kaaviyan", role: "Senior Backend Developer", image: Kaaviyan, alt: "Kaaviyan" },
+   
+  { name: "Rajdurai", role: "Software developer", image: Raj, alt: "Rajasekar Sundaresan" },
+    null,
+   { name: "Sudhakar", role: "Software developer", image: Shudhakar, alt: "Murugan" },
+
+   { name: "Godwin Shibu", role: "Software Developer", image: Shibu, alt: "Mohan" },
+
+
+  
+  { name: "Thulasimani G", role: "Senior Software Developer", image: Tulasi, alt: "Satishkumar" },
+  
+ 
+  
+ 
+ 
+  { name: "Gayathri", role: "Software Developer", image: Gaythiri, alt: "Pavankumar" },
   null,
   { name: "?", role: "", image: "", alt: "" },
+  
 ];
 
 const TeamSection = () => {
