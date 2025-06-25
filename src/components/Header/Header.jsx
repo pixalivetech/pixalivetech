@@ -58,7 +58,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Logo"
-              className="w-[40px] h-[40px] sm:w-[52px] sm:h-[52px] cursor-pointer"
+              className="h-8 w-8 cursor-pointer"
             />
           </Link>
         </div>
