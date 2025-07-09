@@ -11,7 +11,7 @@ import Somanathan from "./../../assets/Aboutus/somu.png";
 import Kesavan from "./../../assets/Aboutus/kesavan.png";
 import Kathirvel from "./../../assets/Aboutus/kathir.png";
 import Dhivinkumar from "./../../assets/Aboutus/dhivin.png";
-import BharathKumar from "./../../assets/Aboutus/Bharath.png";
+import BharathKumar from "./../../assets/Aboutus/bharath.png";
 import PavanKumar from "./../../assets/Aboutus/pawan.png";
 import Kaaviyan from "./../../assets/Aboutus/kaaviyan.png";
 import Gaythiri from "./../../assets/Aboutus/Gaythiri.png";
