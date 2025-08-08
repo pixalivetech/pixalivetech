@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col gap-5">
           <img src={Logo} alt="Pixalive Logo" className="h-8 w-8" />
 
-          <p className="text-sm leading-relaxed max-w-xs">
+          <p className="textmd leading-relaxed max-w-xs">
             From bold ideas to real-world tech—<br />
             Pixalive is where innovation comes alive.
           </p>
@@ -85,6 +85,7 @@ const Footer = () => {
           Pixalive
         </span>
       </div>
+      
     </footer>
   );
 };
