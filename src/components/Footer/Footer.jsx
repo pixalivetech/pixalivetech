@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <a href="/features" className="hover:underline">Features</a>
             <a href="/pricing" className="hover:underline">Pricing</a>
-            <a href="/hireus" className="hover:underline">Hire Us</a>
+            <a href="/hireus" className="hover:underline">Hire us</a>
           </div>
         </div>
 
