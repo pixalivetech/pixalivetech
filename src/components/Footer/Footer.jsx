@@ -49,7 +49,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="flex items-center gap-1 hover:underline"
           >
-            LinkedIn <FaArrowUpRightFromSquare size={10} />
+            Linkedin <FaArrowUpRightFromSquare size={10} />
           </a>
           <a
             href="https://www.instagram.com/pixalivetech/?next=%2F"
