@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Hero from '../components/Home/Hero'
 import WhoweAre from '../components/Home/WhoweAre'
 import Achievements from '../components/Home/Achievements'
 import Strategy from '../components/Home/Strategy'
@@ -22,7 +21,6 @@ const Home = () => {
   return (
     <>
       <div className='py-0'>
-        {/* <Hero /> */}
         <NewHero />
         <WhoweAre />
         <Achievements />
