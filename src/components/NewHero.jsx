@@ -46,7 +46,9 @@ const NewHero = () => {
   const content = heroContent[pathname] || heroContent['/'];
 
   return (
-    <section className="relative w-full h-[100vh]">
+    <section className="relative w-full h-[100vh]"
+    
+    >
       {/* Background Image */}
       <img
         src={content.image}
