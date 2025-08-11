@@ -17,10 +17,12 @@ import Pixaliveworks from "./pages/Pixaliveworks";
 import PixaliveCommerceSection from "./pages/Pixalivecommerce";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollToTopOnRouteChange from "./components/ScrollToTopOnRouteChange";
+import PreloadImages from "./components/PreloadImages";
 
 function App() {
   return (
     <>
+      <PreloadImages />
       <ScrollToTopOnRouteChange /> {/* top scroll on route change and refresh */}
       <ScrollToTop /> {/* Button appears after scroll */}
       <Routes>
