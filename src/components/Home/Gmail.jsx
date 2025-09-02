@@ -7,7 +7,7 @@ const Gmail = () => {
   return (
     <div className="max-w[1280px] flex flex-col md:flex-row items-start justify-between px-6 md:px-20 py-12  min-h-[300px]">
       <p className="text-sm text-gray-700 mb-4 md:mb-0">
-        Ready to Connect With Pixalive?
+        Ready to Connect With Pixla?
       </p>
 
       <div className="max-w-2xl">

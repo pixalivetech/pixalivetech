@@ -1,4 +1,4 @@
-import pixalive from '../../assets/imgs/services/pixalive.jpg';
+import Pixla from '../../assets/imgs/services/Pixalive.jpg';
 import wowlife from '../../assets/imgs/services/wowlife.png';
 import krishivan from '../../assets/imgs/services/krishvan.jpg';
 import chaimug from '../../assets/imgs/services/chaimug.png';
@@ -15,10 +15,10 @@ const CaseStudies = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Featured Card */}
         <div className="md:col-span-3 max-w-128 border border-gray-400 p-4">
-          <img src={pixalive} alt="Pixalive Network" className="h-40  mx-auto mb-4 loading-lazy" />
-          <h3 className="text-lg font-normal mb-2">Pixalive Network</h3>
+          <img src={Pixla} alt="Pixla Network" className="h-40  mx-auto mb-4 loading-lazy" />
+          <h3 className="text-lg font-normal mb-2">Pixla Network</h3>
           <p className="text-sm text-black">
-            Pixalive Network is India’s first integrated digital ecosystem, combining social networking, gold-backed investment, 
+            Pixla Network is India’s first integrated digital ecosystem, combining social networking, gold-backed investment, 
             and smart shopping—all in one platform. Built on trust, transparency, and technology, it empowers users to connect, 
             grow wealth, and explore opportunities in a single, seamless experience.
           </p>

@@ -23,7 +23,7 @@ const VisionMissionGoal = () => {
           <div>
             <h3 className="font-semibold text-gray-900">Our Mission</h3>
             <p className="text-gray-600 text-sm">
-              At Pixalive Technology Services, our mission is to revolutionize the digital landscape by delivering intelligent, future-ready solutions that solve real-world challenges.
+              At Pixla Technology Services, our mission is to revolutionize the digital landscape by delivering intelligent, future-ready solutions that solve real-world challenges.
             </p>
           </div>
         </div>

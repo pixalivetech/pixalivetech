@@ -38,7 +38,7 @@ export default function TeamSection() {
           </div>
           <div className="mt-4 lg:mt-0">
             <h2 className="text-[28px] md:text-3xl font-normal mb-4 max-w-[790px]">
-              Pixalive Technology Services is a dynamic team of innovators, developers, and designers united by a vision to build impactful digital solutions
+              Pixla Technology Services is a dynamic team of innovators, developers, and designers united by a vision to build impactful digital solutions
             </h2>
           </div>
         </div>

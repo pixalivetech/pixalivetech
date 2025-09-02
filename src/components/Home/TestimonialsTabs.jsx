@@ -8,10 +8,10 @@
     const testimonials = [
     {
         name: "Rajaseker Sundaresan",
-        company: "Pixalive tech network",
+        company: "Pixla tech network",
         location: "Bengaluru, India",
         image: rajasekar,
-        quote: "PIXALIVE TECHNOLOGY SERVICES is one of the India’s fastest growing Software Development Company",
+        quote: "Pixla TECHNOLOGY SERVICES is one of the India’s fastest growing Software Development Company",
         users: "10",
         growth: "99",
     },

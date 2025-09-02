@@ -135,7 +135,7 @@ const features = [
 const FeatureGrid = () => {
   return (
     <div className="p-4 w-full max-w-[1280px] mx-auto text-black sm:px-6 md:px-10 py-12 sm:py-16">
-      <h2 className="text-3xl font-regular mb-10">The Future-Proof Pixalive Platform</h2>
+      <h2 className="text-3xl font-regular mb-10">The Future-Proof Pixla Platform</h2>
 
       <p className="font-regular mb-10">
         Sell AI Powered All-in-one marketing & sales system under your<br />

@@ -5,11 +5,11 @@ import whiteLabelIcon from './../../../assets/Product/icon5.4.png';
 import endToEndIcon from './../../../assets/Product/icon5.5.png';
 import lowLatencyIcon from './../../../assets/Product/icon5.6.png';
 
-const PixaliveAdvantage = () => {
+const PixlaAdvantage = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto sm:px-6 md:px-10 py-12 sm:py-16 text-black text-center">
       <h2 className="text-3xl md:text-4xl font-semibold mb-12">
-        The Pixalive Advantage
+        The Pixla Advantage
       </h2>
 
       <div className="grid md:grid-cols-3 gap-8 text-left">
@@ -44,4 +44,4 @@ const PixaliveAdvantage = () => {
   );
 };
 
-export default PixaliveAdvantage;
+export default PixlaAdvantage;

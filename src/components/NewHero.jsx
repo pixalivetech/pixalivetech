@@ -10,30 +10,30 @@ import Header from './Header/Header';
 const heroContent = {
   '/': {
     image: homeImage,
-    title: 'Pixalive is pioneering live streaming and digital innovation for the future of business.',
+    title: 'Pixla is pioneering live streaming and digital innovation for the future of business.',
     subtitle:
-      'We create scalable software, cloud, and consulting solutions that power global brands and the Pixalive Ecosystem—transforming engagement through next-gen live streaming technology.',
+      'We create scalable software, cloud, and consulting solutions that power global brands and the Pixla Ecosystem—transforming engagement through next-gen live streaming technology.',
     button: 'See What We’re Building',
     buttonLink: '/service',
   },
   '/features': {
     image: feabg,
     title: 'Powering Modern Businesses with Scalable Solutions and Next-Gen Live Streaming',
-    subtitle: 'Pixalive Technology Services builds scalable digital solutions and, with Belive Technology, enhances user engagement through advanced live streaming and interactive tools.',
+    subtitle: 'Pixla Technology Services builds scalable digital solutions and, with Belive Technology, enhances user engagement through advanced live streaming and interactive tools.',
     button: 'Book Live Demo',
     buttonLink: '/service',
   },
   '/hireus': {
     image: hirebg,
     title: 'Empowering Innovation with IT Services & Live Streaming',
-    subtitle: 'At Pixalive, we craft scalable SaaS and live streaming solutions that transform bold ideas into market-ready products—boosting your brand and ROI through smart, immersive tech.',
+    subtitle: 'At Pixla, we craft scalable SaaS and live streaming solutions that transform bold ideas into market-ready products—boosting your brand and ROI through smart, immersive tech.',
     button: 'Explore Our Solution',
     buttonLink: '/aboutus',
   },
   '/aboutus': {
     image: aboutbg,
-    title: 'At Pixalive Technology Services, we don’t just build technology—we engineer transformation',
-    subtitle: 'At Pixalive Technology Services, we turn ideas into intelligent, future-ready solutions—reshaping the digital world with innovation, impact, and global ambition.',
+    title: 'At Pixla Technology Services, we don’t just build technology—we engineer transformation',
+    subtitle: 'At Pixla Technology Services, we turn ideas into intelligent, future-ready solutions—reshaping the digital world with innovation, impact, and global ambition.',
     button: 'Know More',
     buttonLink: '/aboutus',
   },

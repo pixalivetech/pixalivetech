@@ -18,19 +18,19 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Heading */}
                 <h1 className="font-lufga font-normal text-[26px] leading-[130%] sm:text-[32px] sm:leading-[140%] md:text-[40px] md:leading-[150%] lg:text-[52px] lg:leading-[160%] tracking-tight mb-10 text-left">
-                    Pixalive Grow — Your All-in-One <br /> Business Tool
+                    Pixla Grow — Your All-in-One <br /> Business Tool
                 </h1>
 
                 {/* Right-aligned Paragraph Section */}
                 <div className="flex flex-col md:flex-row md:justify-end gap-6 md:gap-12">
                     <div className="max-w-md">
                         <p className="font-normal text-[18px] leading-[170%] tracking-normal">
-                            Pixalive Grow is a powerful business suite developed under Pixalive Technology Services Pvt. Ltd. It brings together CRM, sales automation, client management, invoicing, campaigns, and analytics — all in one intuitive platform.
+                            Pixla Grow is a powerful business suite developed under Pixla Technology Services Pvt. Ltd. It brings together CRM, sales automation, client management, invoicing, campaigns, and analytics — all in one intuitive platform.
                         </p>
                     </div>
                     <div className="max-w-md">
                         <p className="font-normal text-[18px] leading-[170%] tracking-normal">
-                            Whether you're a freelancer, startup founder, or business owner, Pixalive Grow gives you the tools to build, market, and manage your business with ease.
+                            Whether you're a freelancer, startup founder, or business owner, Pixla Grow gives you the tools to build, market, and manage your business with ease.
                         </p>
                     </div>
                 </div>

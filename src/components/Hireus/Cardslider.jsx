@@ -17,7 +17,7 @@ const cards = [
     icon: icon2,
     title: "Cloud Adoption Strategy",
     description:
-      "We guide your cloud journey with a strategic approach built on modern architecture, security, and high availability. By choosing the right platform and services, we ensure your SaaS application is scalable, resilient, and ready for growth—powered by Pixalive Technology Services.",
+      "We guide your cloud journey with a strategic approach built on modern architecture, security, and high availability. By choosing the right platform and services, we ensure your SaaS application is scalable, resilient, and ready for growth—powered by Pixla Technology Services.",
   },
   {
     icon: icon3,

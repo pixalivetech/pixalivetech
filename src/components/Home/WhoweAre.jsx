@@ -15,14 +15,14 @@ const WhoweAre = () => {
                 {/* Right - Content */}
                 <div className="w-full lg:w-[850px]">
                     <h2 className="text-[18px] sm:text-3xl md:text-4xl lg:text-[39px] font-normal leading-snug text-black">
-                        Pixalive Technology Services provides smart software, IT consulting, and digital solutions to empower businesses.
+                        Pixla Technology Services provides smart software, IT consulting, and digital solutions to empower businesses.
                     </h2>
 
                     <div className="mt-8 flex flex-col lg:flex-row gap-8">
                         {/* Paragraph Block 1 */}
                         <div className="lg:w-1/2 space-y-4">
                             <p className="text-[18px] text-[#5D5D5D] leading-relaxed">
-                                Pixalive Technology Services delivers scalable tech solutions, empowering businesses and driving innovation within the Pixalive Ecosystem.
+                                Pixla Technology Services delivers scalable tech solutions, empowering businesses and driving innovation within the Pixla Ecosystem.
                             </p>
                             <a
                                 href="/aboutus"
@@ -40,7 +40,7 @@ const WhoweAre = () => {
                         {/* Paragraph Block 2 */}
                         <div className="lg:w-1/2">
                             <p className="text-base text-[#5D5D5D] leading-relaxed">
-                                We build smart digital solutions that fuel business growth and transform industries, as part of the Pixalive Ecosystem.
+                                We build smart digital solutions that fuel business growth and transform industries, as part of the Pixla Ecosystem.
                             </p>
                         </div>
                     </div>

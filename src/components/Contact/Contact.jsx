@@ -19,12 +19,12 @@
 //                     <h3 className="font-semibold mb-1">EMAIL</h3>
 //                     <p className="text-[#5D5D5D]">
 //                         <a
-//                             href="https://mail.google.com/mail/?view=cm&fs=1&to=pixalivetech@gmail.com"
+//                             href="https://mail.google.com/mail/?view=cm&fs=1&to=Pixlatech@gmail.com"
 //                             target="_blank"
 //                             rel="noopener noreferrer"
 //                             className="text-base sm:text-lg cursor-pointer hover:underline block"
 //                         >
-//                             pixalivetech@gmail.com
+//                             Pixlatech@gmail.com
 //                         </a>
 //                     </p>
 //                 </div>
@@ -144,8 +144,8 @@ const Contact = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8 text-sm md:text-base">
                 <div>
                     <h3 className="font-semibold mb-1">EMAIL</h3>
-                    <a href="mailto:pixalivetech@gmail.com" className="text-[#5D5D5D] hover:underline block">
-                        pixalivetech@gmail.com
+                    <a href="mailto:Pixlatech@gmail.com" className="text-[#5D5D5D] hover:underline block">
+                        Pixlatech@gmail.com
                     </a>
                 </div>
                 <div>

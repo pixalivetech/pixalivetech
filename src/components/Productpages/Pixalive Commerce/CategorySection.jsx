@@ -15,55 +15,55 @@ const categories = [
     title: "Fashion",
     image: img1,
     description:
-      "From global names to growing brands, fashion thrives on innovation and style. Pixalive Tech empowers you to build a dynamic fashion marketplace — tailored to trends, packed with features, and designed to elevate the shopping experience.",
+      "From global names to growing brands, fashion thrives on innovation and style. Pixla Tech empowers you to build a dynamic fashion marketplace — tailored to trends, packed with features, and designed to elevate the shopping experience.",
   },
   {
     title: "Furniture",
     image: img2,
     description:
-      "Inspired by IKEA’s innovation, Pixalive Tech crafts smart digital storefronts for artisans and businesses. Our solutions help you showcase products beautifully, manage inventory with ease, and create a smooth, engaging shopping experience.",
+      "Inspired by IKEA’s innovation, Pixla Tech crafts smart digital storefronts for artisans and businesses. Our solutions help you showcase products beautifully, manage inventory with ease, and create a smooth, engaging shopping experience.",
   },
   {
     title: "Electronics",
     image: img3,
     description:
-      "With Pixalive Tech, build a dynamic online hub for gadget lovers — offering sleek product showcases, accurate inventory control, and smooth transactions. We help you launch an electronics marketplace as powerful as Newegg.",
+      "With Pixla Tech, build a dynamic online hub for gadget lovers — offering sleek product showcases, accurate inventory control, and smooth transactions. We help you launch an electronics marketplace as powerful as Newegg.",
   },
   {
     title: "Sports",
     image: img4,
     description:
-      "Level up your sports retail game with Pixalive Tech’s tailored eCommerce solutions. We help you build dynamic, vendor-friendly platforms with responsive designs to showcase sports gear effortlessly and engage enthusiasts with ease.",
+      "Level up your sports retail game with Pixla Tech’s tailored eCommerce solutions. We help you build dynamic, vendor-friendly platforms with responsive designs to showcase sports gear effortlessly and engage enthusiasts with ease.",
   },
   {
     title: "Liquor",
     image: img5,
     description:
-      "Launch a secure, user-friendly liquor marketplace with Pixalive Tech. We build age-gated platforms that comply with industry regulations while delivering a smooth and engaging shopping experience like Vivino.",
+      "Launch a secure, user-friendly liquor marketplace with Pixla Tech. We build age-gated platforms that comply with industry regulations while delivering a smooth and engaging shopping experience like Vivino.",
   },
   {
     title: "Digital Products",
     image: img6,
     description:
-      "At Pixalive Tech, we empower you to build digital product marketplaces like Yo!Kart, designed to meet modern demands. Seamlessly sell creative assets with secure transactions and smooth digital downloads, all backed by our robust platform.",
+      "At Pixla Tech, we empower you to build digital product marketplaces like Yo!Kart, designed to meet modern demands. Seamlessly sell creative assets with secure transactions and smooth digital downloads, all backed by our robust platform.",
   },
   {
     title: "Jewelry",
     image: img7,
     description:
-      "Leverage Pixalive Tech’s sleek platform to showcase your products with style. Our solution enables efficient inventory management, smooth seller-buyer interactions, and an outstanding shopping experience.",
+      "Leverage Pixla Tech’s sleek platform to showcase your products with style. Our solution enables efficient inventory management, smooth seller-buyer interactions, and an outstanding shopping experience.",
   },
   {
     title: "Hand-made",
     image: img8,
     description:
-      "Pixalive Tech provides solutions to build marketplaces for unique handmade goods, just like Etsy. Our platform helps artisans showcase their creations while giving buyers easy access to exclusive, one-of-a-kind items.",
+      "Pixla Tech provides solutions to build marketplaces for unique handmade goods, just like Etsy. Our platform helps artisans showcase their creations while giving buyers easy access to exclusive, one-of-a-kind items.",
   },
   {
     title: "Hardware",
     image: img9,
     description:
-      "Pixalive Tech powers your hardware business with smart software that connects sellers and buyers effortlessly. Manage inventory, showcase products effectively, and offer a smooth shopping experience tailored for hardware pros and DIY enthusiasts alike.",
+      "Pixla Tech powers your hardware business with smart software that connects sellers and buyers effortlessly. Manage inventory, showcase products effectively, and offer a smooth shopping experience tailored for hardware pros and DIY enthusiasts alike.",
   },
 ];
 
@@ -73,11 +73,11 @@ const CategorySection = () => {
       {/* Heading */}
       <div className="flex flex-col lg:flex-col justify-between text-[#000000] space-y-6">
           <h1 className="text-3xl md:text-5xl  font-lufga ">
-          Pixalive Built for Every eCommerce Possibility
+          Pixla Built for Every eCommerce Possibility
           </h1>
           <div className="grid grid-cols-1 md:ml-130 ml-0 text-lg md:grid-cols-2 md:mt-20 mt-4 md:gap-25 gap-6">
             <p>
-            At Pixalive Tech, we deliver industry-specific multi-vendor eCommerce solutions tailored to your unique business requirements.
+            At Pixla Tech, we deliver industry-specific multi-vendor eCommerce solutions tailored to your unique business requirements.
             </p>
             <p className='md:mt-0 mt-8'>
             Our goal is to empower you to stay competitive and grow in the ever-evolving digital marketplace.
@@ -116,7 +116,7 @@ const CategorySection = () => {
       </div>
       <div className="flex justify-center md:mt-25 mt-2 ">
       <h1 className="text-2xl md:text-4xl font-lufga ">
-        Discover All-in-One eCommerce with Pixalive
+        Discover All-in-One eCommerce with Pixla
       </h1>
 
       </div>
