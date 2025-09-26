@@ -1,4 +1,4 @@
-import Pixla from '../../assets/imgs/services/Pixalive.jpg';
+import Pixla from '../../assets/imgs/services/pixalive.jpg';
 import wowlife from '../../assets/imgs/services/wowlife.png';
 import krishivan from '../../assets/imgs/services/krishvan.jpg';
 import chaimug from '../../assets/imgs/services/chaimug.png';
