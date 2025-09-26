@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "Integrations",
-    desc: "Connected to Pixla Ads, Works, and Filings for a complete business ecosystem.",
+    desc: "Connected to Pixalive Ads, Works, and Filings for a complete business ecosystem.",
   },
 ];
 

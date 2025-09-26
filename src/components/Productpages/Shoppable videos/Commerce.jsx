@@ -1,12 +1,12 @@
 import React from "react";
 import videofile from './../../../assets/Product/video1.2.mp4';
 
-const PixlaCommerceSection = () => {
+const PixaliveCommerceSection = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto sm:px-6 md:px-10 py-12 sm:py-16 text-black">
       {/* Heading on top */}
       <h2 className="text-3xl md:text-4xl font-semibold mb-10">
-         As seen on Pixla  <br /> Commerce
+         As seen on Pixalive  <br /> Commerce
       </h2>
       
       {/* Main content: text & video side by side */}
@@ -16,7 +16,7 @@ const PixlaCommerceSection = () => {
           <div className="h-full flex flex-col justify-between">
             {/* Paragraph */}
             <p className="text-gray-800 mb-10 text-3xl leading-relaxed">
-              Pixla Technology powers the future of live commerce with seamless
+              Pixalive Technology powers the future of live commerce with seamless
               shoppable video integrations for modern e-commerce platforms.
             </p>
 
@@ -58,4 +58,4 @@ const PixlaCommerceSection = () => {
   );
 };
 
-export default PixlaCommerceSection;
+export default PixaliveCommerceSection;

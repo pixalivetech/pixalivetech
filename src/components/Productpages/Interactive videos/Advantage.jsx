@@ -5,11 +5,11 @@ import tailoredIcon from './../../../assets/Product/icon2.3.png';
 import analyticsIcon from './../../../assets/Product/icon2.4.png';
 import supportIcon from './../../../assets/Product/icon2.5.png';
 
-const PixlaAdvantage = () => {
+const PixaliveAdvantage = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto sm:px-6 md:px-10 py-12 sm:py-16 text-black text-center">
       <h2 className="text-3xl md:text-4xl font-semibold mb-12">
-        The Pixla Advantage
+        The Pixalive Advantage
       </h2>
 
       <div className="grid md:grid-cols-3 gap-8 text-left">
@@ -47,4 +47,4 @@ const PixlaAdvantage = () => {
   );
 };
 
-export default PixlaAdvantage;
+export default PixaliveAdvantage;

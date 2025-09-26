@@ -21,7 +21,7 @@ const LiveShoppingCTA = () => {
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
           Launch Your Live Shopping <br className="hidden sm:block" />
-          Journey with Pixla
+          Journey with Pixalive
         </h2>
 
         {/* Subtext */}

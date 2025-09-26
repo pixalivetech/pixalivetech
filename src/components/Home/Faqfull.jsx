@@ -45,7 +45,7 @@ const faqs = [
     {
         question: 'How do I get started with PTS?',
         answer:
-            'Simply reach out via our contact form, email us at contact@Pixlatech.com, or call us at +91-8778584566. We’ll schedule a consultation and take  it  forward.',
+            'Simply reach out via our contact form, email us at contact@Pixalivetech.com, or call us at +91-8778584566. We’ll schedule a consultation and take  it  forward.',
     }
    
 ];

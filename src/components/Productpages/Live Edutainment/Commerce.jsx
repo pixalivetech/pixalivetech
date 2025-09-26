@@ -1,7 +1,7 @@
 import React from "react";
 import videofile from './../../../assets/Product/video5.2.mp4';
 
-const PixlaCommerceSection = () => {
+const PixaliveCommerceSection = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto sm:px-6 md:px-10 py-12 sm:py-16 text-black">
       {/* Heading */}
@@ -14,7 +14,7 @@ const PixlaCommerceSection = () => {
         {/* Left: Text */}
         <div className="flex-1 flex flex-col justify-between h-full">
           <p className="text-gray-800 mb-10 text-xl leading-relaxed">
-            Pixla Technology delivers powerful live streaming and interactive trivia capabilities
+            Pixalive Technology delivers powerful live streaming and interactive trivia capabilities
             to help large-scale marketplaces connect millions of sellers with their customers.
           </p>
 
@@ -54,4 +54,4 @@ const PixlaCommerceSection = () => {
   );
 };
 
-export default PixlaCommerceSection;
+export default PixaliveCommerceSection;

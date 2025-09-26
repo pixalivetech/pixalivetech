@@ -1,7 +1,7 @@
 import React from "react";
 import videofile from './../../../assets/Product/video2.2.mp4';
 
-const PixlaCommerceSection = () => {
+const PixaliveCommerceSection = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto sm:px-6 md:px-10 py-12 sm:py-16 text-black">
       {/* Heading on top */}
@@ -59,4 +59,4 @@ const PixlaCommerceSection = () => {
   );
 };
 
-export default PixlaCommerceSection;
+export default PixaliveCommerceSection;

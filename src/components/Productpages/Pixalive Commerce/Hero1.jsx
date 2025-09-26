@@ -13,7 +13,7 @@ const HeroSection = () => {
           Limitless Growth.
         </h1>
         <p className="text-base sm:text-lg text-[#000000] font-lufga max-w-xl mx-auto lg:mx-0">
-          Launch, manage, and scale your B2B & B2C business with India’s most connected commerce ecosystem — from online storefronts to franchise retail, logistics to billing — all powered by Pixla.
+          Launch, manage, and scale your B2B & B2C business with India’s most connected commerce ecosystem — from online storefronts to franchise retail, logistics to billing — all powered by Pixalive.
         </p>
         <div className="flex justify-center md:mt-10 mt-2 lg:justify-start">
           <button className="bg-[#000000] cursor-pointer text-[#FFFFFF] px-6 py-3  text-md font-medium flex items-center gap-2 hover:bg-gray-900 transition">

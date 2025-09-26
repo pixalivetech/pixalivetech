@@ -17,7 +17,7 @@ export default function MethodologySection() {
           </h2>
           
           <p className="text-sm md:text-base ml-0 md:ml-145  text-gray-700 max-w-xl md:mt-10 mt-4">
-            We at Pixla follow agile methodology in our DevOps and development services enabling convenient collaboration, non-conflicting cross-team contribution across multiple layers of an enterprise.
+            We at Pixalive follow agile methodology in our DevOps and development services enabling convenient collaboration, non-conflicting cross-team contribution across multiple layers of an enterprise.
           </p>
         </div>
       </div>

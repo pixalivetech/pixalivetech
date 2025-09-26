@@ -24,7 +24,7 @@ const SolutionsSection = () => {
         <div className="md:w-1/2 space-y-4  md:px-2 px-1 py-3 border-1 border-[#E7E7E7]  ">
           <h3 className="text-xl text-[#000000] font-normal">For Startups</h3>
           <p className="text-md text-[#000000]">
-            At Pixla Technology Services, we understand that startups need
+            At Pixalive Technology Services, we understand that startups need
             agility, speed, and precision. That’s why we specialize in
             transforming your vision into reality with our <strong>MVP Development Approach</strong>,
             designed to deliver immediate results and sustainable growth.
@@ -48,7 +48,7 @@ const SolutionsSection = () => {
         <div className="md:w-1/2 px-1 md:px-2 py-3 space-y-4 ">
           <h3 className="text-xl text-[#000000] mt-4 font-normal">For Enterprises</h3>
           <p className="text-md text-[#000000]">
-            As a trusted partner for enterprises, Pixla Technology Services delivers enterprise-grade SaaS solutions that optimize your operations, enhance user engagement, and drive business outcomes.
+            As a trusted partner for enterprises, Pixalive Technology Services delivers enterprise-grade SaaS solutions that optimize your operations, enhance user engagement, and drive business outcomes.
             Our tailored approach focuses on long-term growth, ensuring that your enterprise stays at the forefront of innovation.
           </p>
           <p className="text-md leading-[280%] font-normal">Here’s how we create value for you:</p>
@@ -59,7 +59,7 @@ const SolutionsSection = () => {
             <li><light  className="text-[#000000]">End-to-End DevOps Support</light>,<light className="text-[#6B6969]"> optimizing time, cost, and effort across your workflows to ensure operational efficiency and reduced overhead</light></li>
           </ul>
           <p className="text-md text-[#000000]">
-            With Pixla, enterprises not only stay competitive—they lead the charge in digital transformation, innovation, and excellence.
+            With Pixalive, enterprises not only stay competitive—they lead the charge in digital transformation, innovation, and excellence.
           </p>
         </div>
         <div className="md:w-1/2">

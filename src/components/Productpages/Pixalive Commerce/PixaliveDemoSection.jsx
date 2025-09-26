@@ -9,7 +9,7 @@ import demo22 from './../../../assets/Product1/demo22.png';
 import demo33 from './../../../assets/Product1/demo33.png';
 import demo44 from './../../../assets/Product1/demo44.png';
 const demoData = {
-  Pixla: [
+  Pixalive: [
     { title: 'Front-End Demo', image: demo11 },
     { title: 'Admin Demo', image: demo22 },
     { title: 'Buyer Demo', image: demo33 },
@@ -23,7 +23,7 @@ const demoData = {
   ],
 };
 
-const PixlaDemoSection = () => {
+const PixaliveDemoSection = () => {
   const [activeTab, setActiveTab] = useState('b2b');
 
   return (
@@ -33,13 +33,13 @@ const PixlaDemoSection = () => {
         <div className="bg-[#D1D1D1] md:text-lg text-sm font-semibold py-2   md:w-105 w-85 ml-2 md:ml-100 flex justify-center gap-4">
           <button
             className={`px-6 py-2 cursor-pointer  ${
-              activeTab === 'Pixla'
+              activeTab === 'Pixalive'
                 ? 'bg-[#000000] text-[#FFFFFF] cursor-pointer'
                 : 'bg-[#D1D1D1] text-[#3E3E3E] cursor-pointer'
             }`}
-            onClick={() => setActiveTab('Pixla')}
+            onClick={() => setActiveTab('Pixalive')}
           >
-            Pixla Demo
+            Pixalive Demo
           </button>
           <button
             className={`px-6 py-2 cursor-pointer ${
@@ -49,7 +49,7 @@ const PixlaDemoSection = () => {
             }`}
             onClick={() => setActiveTab('b2b')}
           >
-            Pixla B2B Demo
+            Pixalive B2B Demo
           </button>
         </div>
 
@@ -86,4 +86,4 @@ const PixlaDemoSection = () => {
   );
 };
 
-export default PixlaDemoSection;
+export default PixaliveDemoSection;

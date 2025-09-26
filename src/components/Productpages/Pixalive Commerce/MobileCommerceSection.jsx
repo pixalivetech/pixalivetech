@@ -21,11 +21,11 @@ const MobileCommerceSection = () => {
         {/* Right Text */}
         <div className="w-full lg:w-1/2  text-[#000000]">
           <h2 className="text-3xl lg:text-5xl  font-lufga md:leading-[160%] leading-[170%] mt-7 md:mt-0 md:mb-16 mb-10">
-          Pixla Commerce Mobile Apps — Powering eCommerce On-the-Go
+          Pixalive Commerce Mobile Apps — Powering eCommerce On-the-Go
           </h2>
 
           <p className="text-md lg:text-lg text-[#000000] md:mb-10 mb-6 leading-[180%]">
-          Pixla Commerce offers powerful mobile apps for Android and iOS, built to deliver a smooth shopping and selling experience. Whether you're a buyer or seller, enjoy all the features of your web platform on the go.
+          Pixalive Commerce offers powerful mobile apps for Android and iOS, built to deliver a smooth shopping and selling experience. Whether you're a buyer or seller, enjoy all the features of your web platform on the go.
           </p>
 
           <div className="mb-6">

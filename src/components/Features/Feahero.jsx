@@ -18,7 +18,7 @@ const Hero = () => {
 
         <div className="grid gap-6 sm:gap-8 md:grid-cols-3 mt-8 sm:text-[15px] md:text-base">
           <div className="hidden md:block" />
-          <p className="font-normal text-[18px] leading-[170%]">Pixla Technology Services specializes in building scalable software solutions, cloud systems, and enterprise-grade platforms that empower digital transformation.</p>
+          <p className="font-normal text-[18px] leading-[170%]">Pixalive Technology Services specializes in building scalable software solutions, cloud systems, and enterprise-grade platforms that empower digital transformation.</p>
           <p className="font-normal text-[18px] leading-[170%]">In partnership with Belive Technology, we bring advanced live streaming capabilities, interactive tools, and end-to-end support to maximize user engagement and business growth.</p>
         </div>
 

@@ -26,7 +26,7 @@ const cardData = [
   {
     title: "Quality Assurance & Testing",
     description:
-      "At Pixla Technology Services, we ensure your products meet the highest standards of quality with our comprehensive Quality Assurance & Testing services.",
+      "At Pixalive Technology Services, we ensure your products meet the highest standards of quality with our comprehensive Quality Assurance & Testing services.",
     image: service10,
   },
 ];

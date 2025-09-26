@@ -1,7 +1,7 @@
 import React from "react";
 import videofile from './../../../assets/Product/video3.3.mp4';
 
-const PixlaCommerceSection = () => {
+const PixaliveCommerceSection = () => {
   return (
     <section className="p-4 w-full max-w-[1280px] mx-auto sm:px-6 md:px-10 py-12 sm:py-16 text-black">
       {/* Heading on top */}
@@ -16,7 +16,7 @@ const PixlaCommerceSection = () => {
           <div className="h-full flex flex-col justify-between">
             {/* Paragraph */}
             <p className="text-gray-800 mb-10 text-3xl leading-relaxed">
-              Pixla Technology powers custom live streaming experiences through fully integrated and scalable solutions.
+              Pixalive Technology powers custom live streaming experiences through fully integrated and scalable solutions.
             </p>
 
             {/* Bullet list */}
@@ -61,4 +61,4 @@ const PixlaCommerceSection = () => {
   );
 };
 
-export default PixlaCommerceSection;
+export default PixaliveCommerceSection;

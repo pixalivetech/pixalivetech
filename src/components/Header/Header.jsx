@@ -21,8 +21,8 @@ const Header = () => {
         { label: 'Social Live Streaming', path: '/products/live-streaming' },
         { label: 'Live Shopping', path: '/products/live-shopping' },
         { label: 'Live Edutainment', path: '/products/live-edutainment' },
-        { label: 'Pixla Grow', path: '/products/Pixla-work' },
-        { label: 'Pixla Commerce', path: '/products/Pixla-commerce' },
+        { label: 'Pixalive Grow', path: '/products/Pixalive-work' },
+        { label: 'Pixalive Commerce', path: '/products/Pixalive-commerce' },
       ],
     },
     { label: 'Features', path: '/features' },
@@ -220,7 +220,7 @@ const Header = () => {
 
           <div className="mt-12 flex">
             <div className="font-medium text-5xl sm:text-6xl md:text-[100px] bg-gradient-to-b from-black to-white bg-clip-text text-transparent text-center">
-              Pixla
+              Pixalive
             </div>
           </div>
         </div>

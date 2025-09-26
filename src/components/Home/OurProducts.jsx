@@ -26,10 +26,10 @@ const products = [
         path: "/products/live-edutainment",
     },
     {
-        title: "Pixla Grow",
-        description: "Pixla Grow helps you easily build, market, and manage your business.",
+        title: "Pixalive Grow",
+        description: "Pixalive Grow helps you easily build, market, and manage your business.",
         image: product3,
-        path: "/products/Pixla-work",
+        path: "/products/Pixalive-work",
     },
     {
         title: "Interactive Webinars",
@@ -50,10 +50,10 @@ const products = [
         path: "/products/live-streaming",
     },
     {
-        title: "Pixla Commerce",
-        description: "Launch your own multi-vendor marketplace with Pixla’s powerful mobile app",
+        title: "Pixalive Commerce",
+        description: "Launch your own multi-vendor marketplace with Pixalive’s powerful mobile app",
         image: product7,
-        path: "/products/Pixla-commerce", // or a separate route if applicable
+        path: "/products/Pixalive-commerce", // or a separate route if applicable
     },
 ];
 

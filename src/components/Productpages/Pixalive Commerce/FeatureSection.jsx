@@ -60,7 +60,7 @@ export default function AdminToolsSection() {
         Robust Admin Tools for Smarter eCommerce Operations
         </h2>
         <p className="text-md md:text-lg max-w-md md:mt-25 mt-7 md:ml-180 ml-0  text-[#000000]">
-        At Pixla Tech, our eCommerce marketplace solutions are built with your business goals in mind. We equip you with a comprehensive set of features to help you run your multi-vendor platform smoothly, so you can stay focused on growth and market success.
+        At Pixalive Tech, our eCommerce marketplace solutions are built with your business goals in mind. We equip you with a comprehensive set of features to help you run your multi-vendor platform smoothly, so you can stay focused on growth and market success.
         </p>
       </div>
 

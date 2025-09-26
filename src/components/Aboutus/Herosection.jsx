@@ -13,7 +13,7 @@ const CultureSection = () => {
       <div className="md:flex md:justify-between md:items-start mb-10">
         <h4 className="text-sm text-gray-500 mb-2 md:mb-0 md:mr-6">Our Culture</h4>
         <p className="text-xl font-semibold text-gray-800 md:max-w-3xl">
-          At Pixla Technology Services, culture is the heartbeat of everything we do.
+          At Pixalive Technology Services, culture is the heartbeat of everything we do.
           We are not just a team—we are a tribe of dreamers, doers, and disruptors who believe
           that innovation begins with people, not just products.
         </p>
